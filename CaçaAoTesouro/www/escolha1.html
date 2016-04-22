@@ -1,0 +1,103 @@
+<html lang = "en">
+    <head>
+   	    <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <!-- tags padrão do framework -->
+        <meta name = "format-detection" content = "telephone=no">
+        <meta name = "msapplication-tap-highlight" content = "no">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- fim -->
+        <title>Caça ao Tesouro</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/escolha1.css" rel = "stylesheet">
+        <link href = "css/backgroundBlue.css" rel = "stylesheet">
+    </head>
+
+    <body onload = "contagem_tempo(0); recebe(1); desativaVoltar()">
+        <nav class = "navbar navbar-default navbar-fixed-top">
+            <div class = "dropdown">
+                <a onclick = "myFunction()" class = "menu"><img src = "img/menu.png"/></a>
+                <!-- Menu dropdown
+                <div id = "myDropdown" class = "dropdown-content">
+                    <a id = "meuTesouro"><b>Meu tesouro</b></a>
+                    <input name = "letra1" id = "letra1" type = "text" value = "A" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha1"/></a>
+                    <input name = "num1" id = "num1" type = "text" value = "  num" readonly/>
+                    <li role = "separator" class = "divider" id = "separador"></li>
+                    <a id = "tesouroOponente"><b>Tesouro <br> oponente</b></a>
+                    <input name = "letra2" id = "letra2" type = "text" value = "?" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha2"/></a>
+                    <input name = "num2" id = "num2" type = "text" value = "  num" readonly/>
+                </div>
+                -->
+            </div>
+            <div class = "voltar">
+                <a onclick = "javascript:location.href='partidaSolo.html'"><img src = "img/botaoVoltar.png" id = "iconeVoltar"/></a>
+            </div>
+            <form name = "contador">
+                <input name = "segundos" id = "contador" type = "text" readonly/>
+            </form>
+		</nav>
+        <div class = "app">
+            <input name = "name1" id = "name1" class="form-control" type = "text" placeholder = "Digite seu nome" required autofocus/>
+            <div class = "tabuleiro">
+                <!--ilha A-->
+                <input name = "ltab1" id = "ltab1" type = "text" value = "A" readonly/>
+                <a><img src = "img/ilha.png" id = "itab1" onclick = "clicaIlha(1)"/></a>
+                <input name = "ntab1" id = "ntab1" type = "text" value = "" readonly/>
+                <!--ilha B-->
+                <input name = "ltab2" id = "ltab2" type = "text" value = "B" readonly/>
+                <a><img src = "img/ilha.png" id = "itab2" onclick = "clicaIlha(2)"/></a>
+                <input name = "ntab2" id = "ntab2" type = "text" value = "" readonly/>
+                <!--ilha C-->
+                <input name = "ltab3" id = "ltab3" type = "text" value = "C" readonly/>
+                <a><img src = "img/ilha.png" id = "itab3" onclick = "clicaIlha(3)"/></a>
+                <input name = "ntab3" id = "ntab3" type = "text" value = "" readonly/>
+                <!--ilha D-->
+                <input name = "ltab4" id = "ltab4" type = "text" value = "D" readonly/>
+                <a><img src = "img/ilha.png" id = "itab4" onclick = "clicaIlha(4)"/></a>
+                <input name = "ntab4" id = "ntab4" type = "text" value = "" readonly/>
+                <!--ilha E-->
+                <input name = "ltab5" id = "ltab5" type = "text" value = "E" readonly/>
+                <a><img src = "img/ilha.png" id = "itab5" onclick = "clicaIlha(5)"/></a>
+                <input name = "ntab5" id = "ntab5" type = "text" value = "" readonly/>
+                <!--ilha F-->
+                <input name = "ltab6" id = "ltab6" type = "text" value = "F" readonly/>
+                <a><img src = "img/ilha.png" id = "itab6" onclick = "clicaIlha(6)"/></a>
+                <input name = "ntab6" id = "ntab6" type = "text" value = "" readonly/>
+                <!--ilha G-->
+                <input name = "ltab7" id = "ltab7" type = "text" value = "G" readonly/>
+                <a><img src = "img/ilha.png" id = "itab7" onclick = "clicaIlha(7)"/></a>
+                <input name = "ntab7" id = "ntab7" type = "text" value = "" readonly/>
+                <!--ilha H-->
+                <input name = "ltab8" id = "ltab8" type = "text" value = "H" readonly/>
+                <a><img src = "img/ilha.png" id = "itab8" onclick = "clicaIlha(8)"/></a>
+                <input name = "ntab8" id = "ntab8" type = "text" value = "" readonly/>
+                <!--ilha I-->
+                <input name = "ltab9" id = "ltab9" type = "text" value = "I" readonly/>
+                <a><img src = "img/ilha.png" id = "itab9" onclick = "clicaIlha(9)"/></a>
+                <input name = "ntab9" id = "ntab9" type = "text" value = "" readonly/>
+                <!--ilha J-->
+                <input name = "ltab10" id = "ltab10" type = "text" value = "J" readonly/>
+                <a><img src = "img/ilha.png" id = "itab10" onclick = "clicaIlha(10)"/></a>
+                <input name = "ntab10" id = "ntab10" type = "text" value = "" readonly/>
+                <!--ilha K-->
+                <input name = "ltab11" id = "ltab11" type = "text" value = "K" readonly/>
+                <a><img src = "img/ilha.png" id = "itab11" onclick = "clicaIlha(11)"/></a>
+                <input name = "ntab11" id = "ntab11" type = "text" value = "" readonly/>
+                <!--ilha L-->
+                <input name = "ltab12" id = "ltab12" type = "text" value = "L" readonly/>
+                <a><img src = "img/ilha.png" id = "itab12" onclick = "clicaIlha(12)"/></a>
+                <input name = "ntab12" id = "ntab12" type = "text" value = "" readonly/>
+                <!--ilha M-->
+                <input name = "ltab13" id = "ltab13" type = "text" value = "M" readonly/>
+                <a><img src = "img/ilha.png" id = "itab13" onclick = "clicaIlha(13)"/></a>
+                <input name = "ntab13" id = "ntab13" type = "text" value = "" readonly/>
+            </div>
+            <a onclick = "envioEscolha(1)"><img src = "img/avancar.png" id = "avançar"/></a>
+            <button type = "submit" class = "btn btn-primary" id = "botaoSelecionar" onclick = "newJogo(1)"><img src = "img/confirmar.png" id = "iconeSelecionar"/> Selecionar</button>
+        </div>
+        <script type = "text/javascript" src = "js/scripts.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

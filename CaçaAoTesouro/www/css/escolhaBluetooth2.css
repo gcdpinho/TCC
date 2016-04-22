@@ -1,0 +1,469 @@
+#pop
+{
+    display:none;
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:25%;
+    left:25%;
+    border:3px solid black;
+    background-image: linear-gradient(to bottom, #AFEEEE, #00BFFF);
+}
+
+#ilha1
+{
+    width: 50%;
+    margin-left: 60%;
+    margin-top: -42%;
+}
+
+#ilha2
+{
+    width: 50%;
+    margin-left: 60%;
+    margin-top: -55%;
+}
+
+#letra1
+{
+    background: transparent;
+    width: 20%;
+    margin-left: 79%;
+    margin-top: -45%;
+    border: none;
+    color: black;
+}
+
+#letra2
+{
+    background: transparent;
+    width: 20%;
+    margin-left: 78%;
+    margin-top: -55%;
+    border: none;
+    color: black;
+}
+
+#num1
+{
+    width: 30%;
+    margin-left: 62%;
+    margin-bottom: 5%;
+    margin-top: -5%;
+}
+
+#num2
+{
+    width: 30%;
+    margin-left: 62%;
+    margin-bottom: 5%;
+    margin-top: -14%;
+}
+
+#meuTesouro, #tesouroOponente
+{
+    margin-top: 20%;
+    margin-left: -5%;
+}
+
+.app
+{
+    margin-top: 10%;
+}
+
+#name2
+{
+    width: 50%;
+    margin-top: 12%;
+    margin-left: 25%;
+}
+
+/*fim_menu*/
+
+.tabuleiro
+{
+    margin-left: 9%;
+}
+
+/*tabuleiro*/
+
+#itab1:hover, #itab2:hover, #itab3:hover, #itab4:hover, #itab5:hover,
+#itab6:hover, #itab7:hover, #itab8:hover, #itab9:hover, #itab10:hover,
+#itab11:hover, #itab12:hover, #itab13:hover
+{
+    background-color: #f1f1f1;
+}
+
+#ltab1
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 3%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab1
+{
+    width: 7%;
+    margin-left: 0%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab1
+{
+    width: 5.5%;
+    margin-left:0.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab2
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab2
+{
+    width: 7%;
+    margin-left: 7%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab2
+{
+    width: 5.5%;
+    margin-left:7.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab3
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 17%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab3
+{
+    width: 7%;
+    margin-left: 14%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab3
+{
+    width: 5.5%;
+    margin-left:14.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab4
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 24%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab4
+{
+    width: 7%;
+    margin-left: 21%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab4
+{
+    width: 5.5%;
+    margin-left:21.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab5
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 31%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab5
+{
+    width: 7%;
+    margin-left: 28%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab5
+{
+    width: 5.5%;
+    margin-left:28.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab6
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 38%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab6
+{
+    width: 7%;
+    margin-left: 35%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab6
+{
+    width: 5.5%;
+    margin-left:35.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab7
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 45%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab7
+{
+    width: 7%;
+    margin-left: 42%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab7
+{
+    width: 5.5%;
+    margin-left:42.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab8
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 52%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab8
+{
+    width: 7%;
+    margin-left: 49%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab8
+{
+    width: 5.5%;
+    margin-left:49.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab9
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 59%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab9
+{
+    width: 7%;
+    margin-left: 56%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab9
+{
+    width: 5.5%;
+    margin-left:56.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab10
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 66%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab10
+{
+    width: 7%;
+    margin-left: 63%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab10
+{
+    width: 5.5%;
+    margin-left:63.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab11
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 73%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab11
+{
+    width: 7%;
+    margin-left: 70%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab11
+{
+    width: 5.5%;
+    margin-left:70.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab12
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 80%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab12
+{
+    width: 7%;
+    margin-left: 77%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab12
+{
+    width: 5.5%;
+    margin-left:77.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab13
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 87%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab13
+{
+    width: 7%;
+    margin-left: 84%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab13
+{
+    width: 5.5%;
+    margin-left:84.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+/* fim_tabuleiro*/
+
+#voltar
+{
+    width: 7%;
+    margin-left: 0%;
+    margin-top: 10%;
+}
+
+#botaoSelecionar
+{
+    margin-top: 26%;
+    margin-left: 33%;
+    position: absolute;
+}
+
+#iconeSelecionar
+{
+    width: 20%;
+    margin-left: -15%;
+    margin-right: 8%;
+}

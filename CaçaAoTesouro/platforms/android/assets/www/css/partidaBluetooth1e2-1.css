@@ -1,0 +1,585 @@
+body
+{
+    background-image: linear-gradient(to bottom, #AFEEEE, #00BFFF);
+}
+
+.navbar
+{
+    background-color: #1E90FF;
+    border-bottom: 0px;
+    height: 10%;
+}
+
+.menu
+{
+    position: relative;
+    margin-left: 88%;
+    margin-top: -2.5%;
+}
+
+#contador
+{
+    background: transparent;
+    border: none;
+    font-size: 220%;
+    margin-left: 43.5%;
+    margin-top: -10%;
+    color: black;
+}
+
+#separador
+{
+    color: transparent;
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    position: relative;
+}
+
+/* Menu */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 76%;
+    margin-top: -2.5%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #1E90FF;
+    margin-left: -20%;
+    margin-top: -20%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {background-color: #f1f1f1}*/
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#ilha1
+{
+    width: 50%;
+    margin-left: 60%;
+    margin-top: -42%;
+}
+
+#ilha2
+{
+    width: 50%;
+    margin-left: 60%;
+    margin-top: -55%;
+}
+
+#letra1
+{
+    background: transparent;
+    width: 20%;
+    margin-left: 79%;
+    margin-top: -45%;
+    border: none;
+    color: black;
+}
+
+#letra2
+{
+    background: transparent;
+    width: 20%;
+    margin-left: 78%;
+    margin-top: -55%;
+    border: none;
+    color: black;
+}
+
+#num1
+{
+    width: 30%;
+    margin-left: 62%;
+    margin-bottom: 5%;
+    margin-top: -5%;
+}
+
+#num2
+{
+    width: 30%;
+    margin-left: 62%;
+    margin-bottom: 5%;
+    margin-top: -14%;
+}
+
+#meuTesouro, #tesouroOponente
+{
+    margin-top: 20%;
+    margin-left: -5%;
+}
+
+.app
+{
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+#name1
+{
+    width: 50%;
+    margin-top: 12%;
+    margin-left: 25%;
+}
+
+/*fim_menu*/
+
+/*meu tabuleiro*/
+
+.meuTab
+{
+    margin-top: -5%;
+}
+
+.opoTab
+{
+    margin-top: 18%;
+}
+
+#oitab1:hover, #oitab2:hover, #oitab3:hover, #oitab4:hover, #oitab5:hover,
+#oitab6:hover, #oitab7:hover, #oitab8:hover, #oitab9:hover, #oitab10:hover,
+#oitab11:hover, #oitab12:hover, #oitab13:hover
+{
+    background-color: #f1f1f1;
+}
+
+#ltab1, #oltab1
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 3%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab1, #oitab1
+{
+    width: 7%;
+    margin-left: 0%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab1, #ontab1
+{
+    width: 5.5%;
+    margin-left:0.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab2, #oltab2
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab2, #oitab2
+{
+    width: 7%;
+    margin-left: 7%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab2, #ontab2
+{
+    width: 5.5%;
+    margin-left:7.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab3, #oltab3
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 17%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab3, #oitab3
+{
+    width: 7%;
+    margin-left: 14%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab3, #ontab3
+{
+    width: 5.5%;
+    margin-left:14.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab4, #oltab4
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 24%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab4, #oitab4
+{
+    width: 7%;
+    margin-left: 21%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab4, #ontab4
+{
+    width: 5.5%;
+    margin-left:21.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab5, #oltab5
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 31%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab5, #oitab5
+{
+    width: 7%;
+    margin-left: 28%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab5, #ontab5
+{
+    width: 5.5%;
+    margin-left:28.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab6, #oltab6
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 38%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab6, #oitab6
+{
+    width: 7%;
+    margin-left: 35%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab6, #ontab6
+{
+    width: 5.5%;
+    margin-left:35.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab7, #oltab7
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 45%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab7, #oitab7
+{
+    width: 7%;
+    margin-left: 42%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab7, #ontab7
+{
+    width: 5.5%;
+    margin-left:42.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab8, #oltab8
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 52%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab8, #oitab8
+{
+    width: 7%;
+    margin-left: 49%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab8, #ontab8
+{
+    width: 5.5%;
+    margin-left:49.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab9, #oltab9
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 59%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab9, #oitab9
+{
+    width: 7%;
+    margin-left: 56%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab9, #ontab9
+{
+    width: 5.5%;
+    margin-left:56.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab10, #oltab10
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 66%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab10, #oitab10
+{
+    width: 7%;
+    margin-left: 63%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab10, #ontab10
+{
+    width: 5.5%;
+    margin-left:63.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab11, #oltab11
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 73%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab11, #oitab11
+{
+    width: 7%;
+    margin-left: 70%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab11, #ontab11
+{
+    width: 5.5%;
+    margin-left:70.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab12, #oltab12
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 80%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab12, #oitab12
+{
+    width: 7%;
+    margin-left: 77%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab12, #ontab12
+{
+    width: 5.5%;
+    margin-left:77.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+#ltab13, #oltab13
+{
+    background: transparent;
+    width: 3%;
+    margin-left: 87%;
+    margin-top: 5%;
+    border: none;
+    color: black;
+    position: absolute;
+}
+
+#itab13, #oitab13
+{
+    width: 7%;
+    margin-left: 84%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+#ntab13, #ontab13
+{
+    width: 5.5%;
+    margin-left:84.5%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+/* fim_tabuleiro*/
+
+#avançar
+{
+    width: 7%;
+    margin-left: 92.5%;
+    margin-top: 20%;
+    position: absolute;
+}
+
+#botaoPalpite
+{
+    margin-top: 23.5%;
+    width: 20%;
+    height: 12%;
+
+}
+
+#iconePolegar
+{
+    width: 28%;
+    margin-left: -25%;
+    margin-right: 15%;
+    margin-top: -1%;
+}
+
+#desistir
+{
+    color: black;
+    cursor:default;
+    margin-top: -9.5%;
+    margin-left: 2%;
+    position: absolute;
+}
+
+#desistir:hover
+{
+    text-decoration: none;
+    cursor:default;
+}
+
+#sair
+{
+    width: 20%;
+    margin-right: 5%;
+    margin-top: -10%;
+}
+
+#pop
+{
+    display:none;
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:25%;
+    left:25%;
+    border:3px solid black;
+    background-image: linear-gradient(to bottom, #AFEEEE, #00BFFF);
+}
+
+#ok
+{
+    width:30%;
+    height: 21%;
+    position: absolute;
+    top: 78%;
+    left: 35%;
+}

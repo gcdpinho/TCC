@@ -1,0 +1,39 @@
+#jogar
+{
+    margin-top: 23%;
+    position: absolute;
+}
+
+#configurações
+{
+    margin-top: 32%;
+    position: absolute;
+}
+
+#classificação
+{
+    margin-top: 41%;
+    position: absolute;
+}
+
+.ilha
+{
+    margin-top: 10%;
+    margin-left: -22%;
+    z-index: -1;
+    position: absolute;
+}
+
+.bau
+{
+    margin-top: 15%;
+    margin-left: 72%;
+    position: absolute;
+}
+
+.autoFalante
+{
+    margin-left: 80%;
+    margin-top: 41%;
+    position: absolute;
+}

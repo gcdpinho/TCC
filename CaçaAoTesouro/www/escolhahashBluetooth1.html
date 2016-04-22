@@ -1,0 +1,56 @@
+<html lang = "en">
+    <head>
+   	    <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <!-- tags padrão do framework -->
+        <meta name = "format-detection" content = "telephone=no">
+        <meta name = "msapplication-tap-highlight" content = "no">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- fim -->
+        <title>Caça ao Tesouro</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/escolhahashBluetooth1.css" rel = "stylesheet">
+    </head>
+
+    <body onload = "contagem_tempo(0); recebe(31); desativaVoltar()">
+        <nav class = "navbar navbar-default navbar-fixed-top">
+            <div class = "dropdown">
+                <a onclick = "myFunction()" class = "menu"><img src = "img/menu.png"/></a>
+                <!-- Menu dropdown
+                <div id = "myDropdown" class = "dropdown-content">
+                    <a id = "meuTesouro"><b>Meu tesouro</b></a>
+                    <input name = "letra1" id = "letra1" type = "text" value = "A" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha1"/></a>
+                    <input name = "num1" id = "num1" type = "text" value = "  num" readonly/>
+                    <li role = "separator" class = "divider" id = "separador"></li>
+                    <a id = "tesouroOponente"><b>Tesouro <br> oponente</b></a>
+                    <input name = "letra2" id = "letra2" type = "text" value = "?" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha2"/></a>
+                    <input name = "num2" id = "num2" type = "text" value = "  num" readonly/>
+                </div>
+                -->
+            </div>
+            <div class = "voltar">
+                <a id = "back" onclick = "zerarBluetooth()"><img src = "img/botaoVoltar.png" id = "iconeVoltar"/></a>
+            </div>
+            <form name = "contador">
+                <input name = "segundos" id = "contador" type = "text" readonly/>
+            </form>
+		</nav>
+        <div class = "app">
+            <input name = "name3" id = "name3" class="form-control" type = "text" placeholder = "Digite seu nome" required autofocus/>
+            <div class = "tabuleiro">
+                <table id = "table">
+                </table>
+            </div>
+            <a id = "prox" onclick = "envioEscolhaHashBluetooth(1)"><img src = "img/avancarDown.png" id = "avançar"/></a>
+            <button type = "submit" class = "btn btn-primary" id = "botaoSelecionar" onclick = "newJogoBluetooth(3)"><img src = "img/confirmar.png" id = "iconeSelecionar"/> Selecionar</button>
+            <div id = "pop">
+            </div>
+        </div>
+        <script type = "text/javascript" src = "js/scripts.js"></script>
+        <script type = "text/javascript" src = "js/lib/jquery.js"></script>
+        <script type = "text/javascript" src = "js/partidaBluetooth.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

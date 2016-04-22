@@ -1,0 +1,166 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"BluetoothLePlugin\"><param name=\"android-package\" value=\"com.randdusing.bluetoothle.BluetoothLePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BCBluetooth\"><param name=\"android-package\" value=\"org.bcsphere.bluetooth.BCBluetooth\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Bluetooth\"><param name=\"android-package\" value=\"org.apache.cordova.bluetooth.BluetoothPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkingBluetooth\"><param name=\"android-package\" value=\"cordova.plugin.networking.bluetooth.NetworkingBluetooth\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"BLE\"><param name=\"android-package\" value=\"com.megster.cordova.ble.central.BLECentralPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"android-package\" value=\"com.megster.cordova.BluetoothSerial\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 4
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 4
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-bluetoothle": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.bcsphere.bluetooth": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.phonegap.plugins.bluetooth": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-networking-bluetooth": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-ble-central/www/ble.js",
+            "id": "cordova-plugin-ble-central.ble",
+            "pluginId": "cordova-plugin-ble-central",
+            "clobbers": [
+                "ble"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-bluetoothle/www/bluetoothle.js",
+            "id": "cordova-plugin-bluetoothle.BluetoothLe",
+            "pluginId": "cordova-plugin-bluetoothle",
+            "clobbers": [
+                "window.bluetoothle"
+            ]
+        },
+        {
+            "file": "plugins/org.bcsphere.bluetooth/www/org.underscorejs.underscore/underscore.js",
+            "id": "org.bcsphere.bluetooth.underscorejs.underscore",
+            "pluginId": "org.bcsphere.bluetooth"
+        },
+        {
+            "file": "plugins/org.bcsphere.bluetooth/www/org.bcsphere/bc.js",
+            "id": "org.bcsphere.bluetooth.bcjs",
+            "pluginId": "org.bcsphere.bluetooth",
+            "merges": [
+                "BC"
+            ]
+        },
+        {
+            "file": "plugins/org.bcsphere.bluetooth/www/org.bcsphere.bluetooth/bluetoothapi.js",
+            "id": "org.bcsphere.bluetooth.bluetoothapi",
+            "pluginId": "org.bcsphere.bluetooth",
+            "merges": [
+                "navigator.bluetooth"
+            ]
+        },
+        {
+            "file": "plugins/com.phonegap.plugins.bluetooth/www/bluetooth.js",
+            "id": "com.phonegap.plugins.bluetooth.bluetooth",
+            "pluginId": "com.phonegap.plugins.bluetooth",
+            "clobbers": [
+                "bluetooth"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-networking-bluetooth/www/event.js",
+            "id": "cordova-plugin-networking-bluetooth.event",
+            "pluginId": "cordova-plugin-networking-bluetooth"
+        },
+        {
+            "file": "plugins/cordova-plugin-networking-bluetooth/www/NetworkingBluetooth.js",
+            "id": "cordova-plugin-networking-bluetooth.NetworkingBluetooth",
+            "pluginId": "cordova-plugin-networking-bluetooth",
+            "clobbers": [
+                "networking.bluetooth"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-bluetooth-serial/www/bluetoothSerial.js",
+            "id": "cordova-plugin-bluetooth-serial.bluetoothSerial",
+            "clobbers": [
+                "window.bluetoothSerial"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-ble-central": "1.0.3",
+        "cordova-plugin-bluetoothle": "2.4.0",
+        "org.bcsphere.bluetooth": "0.5.1",
+        "com.phonegap.plugins.bluetooth": "0.9",
+        "cordova-plugin-networking-bluetooth": "1.0.1",
+        "cordova-plugin-bluetooth-serial": "0.4.5"
+    }
+}

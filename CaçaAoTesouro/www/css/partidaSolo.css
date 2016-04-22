@@ -1,0 +1,56 @@
+#linear
+{
+    margin-top: 23%;
+    position: absolute;
+}
+
+#binário
+{
+    margin-top: 32%;
+    position: absolute;
+}
+
+#hashing
+{
+    margin-top: 41%;
+    position: absolute;
+}
+
+.navio
+{
+    margin-top: 20%;
+    margin-left: -2%;
+    position: absolute;
+    z-index: -1;
+}
+
+#iconeNavio
+{
+    width: 35%;
+}
+
+.papagaio
+{
+    margin-top: 13%;
+    margin-left: 75%;
+    position: absolute;
+}
+
+#iconePapagaio
+{
+    width: 90%;
+}
+
+.autoFalante
+{
+    margin-left: 80%;
+    margin-top: 41%;
+    position: absolute;;
+}
+
+.voltar
+{
+    margin-top: 2%;
+    margin-left: 2%;
+    position: absolute;
+}

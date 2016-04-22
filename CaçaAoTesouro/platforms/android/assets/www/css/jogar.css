@@ -1,0 +1,44 @@
+#solo
+{
+    margin-top: 23%;
+    position: absolute;
+}
+
+#multi
+{
+    margin-top: 32%;
+    position: absolute;
+}
+
+#tutorial
+{
+    margin-top: 41%;
+    position: absolute;
+}
+
+.pirata
+{
+    margin-top: 20%;
+    position: absolute;
+}
+
+.mapa
+{
+    margin-top: 13%;
+    margin-left: 75%;
+    position: absolute;
+}
+
+.autoFalante
+{
+    margin-left: 80%;
+    margin-top: 41%;
+    position: absolute;;
+}
+
+.voltar
+{
+    margin-top: 2%;
+    margin-left: 2%;
+    position: absolute;
+}

@@ -1,0 +1,116 @@
+#list-devices
+{
+    margin-top: 18%;
+}
+
+#devices
+{
+    position:absolute;
+    width:50%;
+    height:66%;
+    top:28%;
+    left:45%;
+    border:1px solid black;
+    overflow-y: auto;
+}
+
+.list-group-item
+{
+    background: transparent;
+}
+.botão
+{
+    position:absolute;
+    width:40%;
+    height:66%;
+    top:28%;
+    left:2%;
+    border:1px solid black;
+}
+
+#bluetooth:hover, #dispositivos:hover
+{
+    text-decoration: none;
+    cursor:default;
+}
+
+#bluetooth
+{
+    position: absolute;
+    font-size: 160%;
+    color: black;
+    margin-top: 3%;
+    margin-left: 28%;
+}
+
+#dispositivos
+{
+    position: absolute;
+    font-size: 160%;
+    color: black;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+
+#df
+{
+    position: absolute;
+    font-size: 160%;
+    color: black;
+    margin-top: 5%;
+    margin-left: 28%;
+}
+
+#btn-bt-on, #btn-bt-off
+{
+    width: 47%;
+    height: 20%;
+    margin-top: 23%;
+    position: absolute;
+}
+
+#btn-bt-on
+{
+    margin-left: 2%;
+}
+
+#btn-bt-off
+{
+    margin-left: 51%;
+}
+
+#btn-bt-discover
+{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 46%;
+    position: absolute;
+}
+
+#btn-bt-pair
+{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 70%;
+    position: absolute;
+}
+
+#tutorial
+{
+    margin-top: 41%;
+    position: absolute;
+}
+
+.autoFalante
+{
+    margin-left: 80%;
+    margin-top: 41%;
+    position: absolute;;
+}
+
+.voltar
+{
+    margin-top: 2%;
+    margin-left: 2%;
+    position: absolute;
+}

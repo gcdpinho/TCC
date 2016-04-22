@@ -1,0 +1,39 @@
+<html lang = "en">
+    <head>
+   	    <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <!-- tags padrão do framework -->
+        <meta name = "format-detection" content = "telephone=no">
+        <meta name = "msapplication-tap-highlight" content = "no">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- fim -->
+        <title>Caça ao Tesouro</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/index.css" rel = "stylesheet">
+        <link href = "css/background.css" rel = "stylesheet">
+    </head>
+
+    <body onload = "desativaVoltar(); javascript:window.localStorage.setItem('firstTime', null); zera()">
+      <div class = "app">
+        <div class = "botão">
+            <button type = "submit" class = "btn btn-default" id = "jogar" onclick = "javascript:location.href='jogar.html'">Jogar</button>
+            <button type = "submit" class = "btn btn-default" id = "configurações">Configurações</button>
+            <button type = "submit" class = "btn btn-default" id = "classificação">Classificação</button>
+        </div>
+        <div class = "ilha">
+            <a><img src = "img/backgroundIlha.png"></a>
+        </div>
+        <div class = "bau">
+            <a><img src = "img/backgroundBau.png"></a>
+        </div>
+        <div class = "autoFalante">
+            <a onclick = "changeSrc('imagem')"><img src = "img/autoFalanteOn.png" alt = "on" id = "imagem"/></a>
+        </div>
+        <div class = "titulo">
+            <a><img src = "img/backgroundTitulo.png"></a>
+        </div>
+    </div>
+        <script type = "text/javascript" src = "cordova.js"></script>
+        <script type = "text/javascript" src = "js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html lang = "en">
+    <head>
+   	    <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <!-- tags padrão do framework -->
+        <meta name = "format-detection" content = "telephone=no">
+        <meta name = "msapplication-tap-highlight" content = "no">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- fim -->
+        <title>Caça ao Tesouro</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/partidahashBluetooth1.css" rel = "stylesheet">
+    </head>
+
+    <body onload = "javascript:window.localStorage.setItem('tempo', 0); recebeTempo(31); desativaVoltar(); getNome(); onLoadFirstTime()">
+        <nav class = "navbar navbar-default navbar-fixed-top" id = "barraSuperior">
+            <div class = "dropdown">
+                <a onclick = "myFunction()" class = "menu"><img src = "img/menu.png"/></a>
+                <div id = "myDropdown" class = "dropdown-content">
+                    <a id = "meuTesouro"><b>Meu tesouro</b></a>
+                    <input name = "letra1" id = "letra1" type = "text" value = "A" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha1"/></a>
+                    <input name = "num1" id = "num1" type = "text" value = "  num" readonly/>
+                    <li role = "separator" class = "divider" id = "separador"></li>
+                    <a id = "tesouroOponente"><b>Tesouro <br> oponente</b></a>
+                    <input name = "letra2" id = "letra2" type = "text" value = "?" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha2"/></a>
+                    <input name = "num2" id = "num2" type = "text" value = "  num" readonly/>
+                </div>
+            </div>
+            <form name = "contador">
+                <input name = "segundos" id = "contador" type = "text" readonly/>
+            </form>
+            <a onclick = "desistir()" id = "desistir"><img src = "img/sair.png" id = "sair"/><b>Desistir</b></a>
+		</nav>
+        <div class = "app">
+            <div class = "tabuleiro">
+                <table id = "table">
+                </table>
+            </div>
+            <a onclick = "envioTempoBluetooth(32)"><img src = "img/avancarDown.png" id = "avançar"/></a>
+            <a onclick = "envioTempoBluetooth(33)"><img src = "img/avancar.png" id = "avançar2"/></a>
+            <!--
+            <button type = "submit" class = "btn btn-primary" id = "botaoSelecionar" onclick = ""><img src = "img/polegar.png" id = "iconeSelecionar"/>Palpite</button>
+            -->
+            <div id="pop">
+            </div>
+        </div>
+        <script type = "text/javascript" src = "js/scripts.js"></script>
+        <script type = "text/javascript" src = "js/lib/jquery.js"></script>
+        <script type = "text/javascript" src = "js/moeda.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

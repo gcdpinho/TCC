@@ -1,0 +1,37 @@
+{
+    "org.bcsphere.bluetooth": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bcsphere/bluetooth",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.bluetooth": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tanelih/phonegap-bluetooth-plugin",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-networking-bluetooth": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-networking-bluetooth"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-bluetooth-serial": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/don/BluetoothSerial",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

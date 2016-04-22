@@ -1,0 +1,156 @@
+<html lang = "en">
+    <head>
+   	    <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <!-- tags padrão do framework -->
+        <meta name = "format-detection" content = "telephone=no">
+        <meta name = "msapplication-tap-highlight" content = "no">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- fim -->
+        <title>Caça ao Tesouro</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/partidaBluetooth1e2-2.css" rel = "stylesheet">
+    </head>
+
+    <body onload = "recebeTempo(2); desativaVoltar(); getNome(); preencher(2); myTurn();">
+        <nav class = "navbar navbar-default navbar-fixed-top" id = "barraSuperior">
+            <div class = "dropdown">
+                <a onclick = "myFunction()" class = "menu"><img src = "img/menu.png"/></a>
+                <div id = "myDropdown" class = "dropdown-content">
+                    <a id = "meuTesouro"><b>Meu tesouro</b></a>
+                    <input name = "letra1" id = "letra1" type = "text" value = "" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha1"/></a>
+                    <input name = "num1" id = "num1" type = "text" value = "  num" readonly/>
+                    <li role = "separator" class = "divider" id = "separador"></li>
+                    <a id = "tesouroOponente"><b>Tesouro <br> oponente</b></a>
+                    <input name = "letra2" id = "letra2" type = "text" value = "?" readonly/>
+                    <a><img src = "img/ilha.png" id = "ilha2"/></a>
+                    <input name = "num2" id = "num2" type = "text" value = "  num" readonly/>
+                </div>
+            </div>
+            <form name = "contador">
+                <input name = "segundos" id = "contador" type = "text" readonly/>
+            </form>
+            <a onclick = "desistir()" id = "desistir"><img src = "img/sair.png" id = "sair"/><b>Desistir</b></a>
+		</nav>
+        <div class = "app">
+            <div class = "meuTab">
+                <!--ilha N-->
+                <input name = "ltab1" id = "ltab1" type = "text" value = "N" readonly/>
+                <a><img src = "img/ilha.png" id = "itab1"/></a>
+                <input name = "ntab1" id = "ntab1" type = "text" value = "num" readonly/>
+                <!--ilha O-->
+                <input name = "ltab2" id = "ltab2" type = "text" value = "O" readonly/>
+                <a><img src = "img/ilha.png" id = "itab2"/></a>
+                <input name = "ntab2" id = "ntab2" type = "text" value = "num" readonly/>
+                <!--ilha P-->
+                <input name = "ltab3" id = "ltab3" type = "text" value = "P" readonly/>
+                <a><img src = "img/ilha.png" id = "itab3"/></a>
+                <input name = "ntab3" id = "ntab3" type = "text" value = "num" readonly/>
+                <!--ilha Q-->
+                <input name = "ltab4" id = "ltab4" type = "text" value = "Q" readonly/>
+                <a><img src = "img/ilha.png" id = "itab4"/></a>
+                <input name = "ntab4" id = "ntab4" type = "text" value = "num" readonly/>
+                <!--ilha R-->
+                <input name = "ltab5" id = "ltab5" type = "text" value = "R" readonly/>
+                <a><img src = "img/ilha.png" id = "itab5"/></a>
+                <input name = "ntab5" id = "ntab5" type = "text" value = "num" readonly/>
+                <!--ilha S-->
+                <input name = "ltab6" id = "ltab6" type = "text" value = "S" readonly/>
+                <a><img src = "img/ilha.png" id = "itab6"/></a>
+                <input name = "ntab6" id = "ntab6" type = "text" value = "num" readonly/>
+                <!--ilha T-->
+                <input name = "ltab7" id = "ltab7" type = "text" value = "T" readonly/>
+                <a><img src = "img/ilha.png" id = "itab7"/></a>
+                <input name = "ntab7" id = "ntab7" type = "text" value = "num" readonly/>
+                <!--ilha U-->
+                <input name = "ltab8" id = "ltab8" type = "text" value = "U" readonly/>
+                <a><img src = "img/ilha.png" id = "itab8"/></a>
+                <input name = "ntab8" id = "ntab8" type = "text" value = "num" readonly/>
+                <!--ilha V-->
+                <input name = "ltab9" id = "ltab9" type = "text" value = "V" readonly/>
+                <a><img src = "img/ilha.png" id = "itab9"/></a>
+                <input name = "ntab9" id = "ntab9" type = "text" value = "num" readonly/>
+                <!--ilha W-->
+                <input name = "ltab10" id = "ltab10" type = "text" value = "W" readonly/>
+                <a><img src = "img/ilha.png" id = "itab10"/></a>
+                <input name = "ntab10" id = "ntab10" type = "text" value = "num" readonly/>
+                <!--ilha X-->
+                <input name = "ltab11" id = "ltab11" type = "text" value = "X" readonly/>
+                <a><img src = "img/ilha.png" id = "itab11"/></a>
+                <input name = "ntab11" id = "ntab11" type = "text" value = "num" readonly/>
+                <!--ilha Y-->
+                <input name = "ltab12" id = "ltab12" type = "text" value = "Y" readonly/>
+                <a><img src = "img/ilha.png" id = "itab12"/></a>
+                <input name = "ntab12" id = "ntab12" type = "text" value = "num" readonly/>
+                <!--ilha Z-->
+                <input name = "ltab13" id = "ltab13" type = "text" value = "Z" readonly/>
+                <a><img src = "img/ilha.png" id = "itab13"/></a>
+                <input name = "ntab13" id = "ntab13" type = "text" value = "num" readonly/>
+            </div>
+            <a onclick = "envioTempoBluetooth(1)"><img src = "img/voltar.png" id = "voltar"/></a>
+            <div class = "opoTab">
+                <!--ilha N-->
+                <input name = "oltab1" id = "oltab1" type = "text" value = "N" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab1" onclick = "clicaIlhaJogo(1)"/></a>
+                <input name = "ontab1" id = "ontab1" type = "text" value = "" readonly/>
+                <!--ilha O-->
+                <input name = "oltab2" id = "oltab2" type = "text" value = "O" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab2" onclick = "clicaIlhaJogo(2)"/></a>
+                <input name = "ontab2" id = "ontab2" type = "text" value = "" readonly/>
+                <!--ilha P-->
+                <input name = "oltab3" id = "oltab3" type = "text" value = "P" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab3" onclick = "clicaIlhaJogo(3)"/></a>
+                <input name = "ontab3" id = "ontab3" type = "text" value = "" readonly/>
+                <!--ilha Q-->
+                <input name = "oltab4" id = "oltab4" type = "text" value = "Q" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab4" onclick = "clicaIlhaJogo(4)"/></a>
+                <input name = "ontab4" id = "ontab4" type = "text" value = "" readonly/>
+                <!--ilha R-->
+                <input name = "oltab5" id = "oltab5" type = "text" value = "R" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab5" onclick = "clicaIlhaJogo(5)"/></a>
+                <input name = "ontab5" id = "ontab5" type = "text" value = "" readonly/>
+                <!--ilha S-->
+                <input name = "oltab6" id = "oltab6" type = "text" value = "S" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab6" onclick = "clicaIlhaJogo(6)"/></a>
+                <input name = "ontab6" id = "ontab6" type = "text" value = "" readonly/>
+                <!--ilha T-->
+                <input name = "oltab7" id = "oltab7" type = "text" value = "T" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab7" onclick = "clicaIlhaJogo(7)"/></a>
+                <input name = "ontab7" id = "ontab7" type = "text" value = "" readonly/>
+                <!--ilha U-->
+                <input name = "oltab8" id = "oltab8" type = "text" value = "U" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab8" onclick = "clicaIlhaJogo(8)"/></a>
+                <input name = "ontab8" id = "ontab8" type = "text" value = "" readonly/>
+                <!--ilha V-->
+                <input name = "oltab9" id = "oltab9" type = "text" value = "V" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab9" onclick = "clicaIlhaJogo(9)"/></a>
+                <input name = "ontab9" id = "ontab9" type = "text" value = "" readonly/>
+                <!--ilha W-->
+                <input name = "oltab10" id = "oltab10" type = "text" value = "W" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab10" onclick = "clicaIlhaJogo(10)"/></a>
+                <input name = "ontab10" id = "ontab10" type = "text" value = "" readonly/>
+                <!--ilha X-->
+                <input name = "oltab11" id = "oltab11" type = "text" value = "X" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab11" onclick = "clicaIlhaJogo(11)"/></a>
+                <input name = "ontab11" id = "ontab11" type = "text" value = "" readonly/>
+                <!--ilha Y-->
+                <input name = "oltab12" id = "oltab12" type = "text" value = "Y" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab12" onclick = "clicaIlhaJogo(12)"/></a>
+                <input name = "ontab12" id = "ontab12" type = "text" value = "" readonly/>
+                <!--ilha Z-->
+                <input name = "oltab13" id = "oltab13" type = "text" value = "Z" readonly/>
+                <a><img src = "img/ilha.png" id = "oitab13" onclick = "clicaIlhaJogo(13)"/></a>
+                <input name = "ontab13" id = "ontab13" type = "text" value = "" readonly/>
+            </div>
+            <center><button type = "submit" class = "btn btn-primary" id = "botaoPalpite" onclick = "palpiteBluetooth()" disabled><img src = "img/polegar.png" id = "iconePolegar"/>Palpite</button></center>
+        </div>
+        <div id="pop">
+        </div>
+
+        <script type = "text/javascript" src = "js/scripts.js"></script>
+        <script type = "text/javascript" src = "js/lib/jquery.js"></script>
+        <script type = "text/javascript" src = "js/moeda.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
