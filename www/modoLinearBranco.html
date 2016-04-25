@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Caça ao Tesouro</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onselectstart='return false' ondragstart='return false' onload = "inicioJogo1(); blocAtt()">
+
+	<div class="container-fluid jogo">
+		<div class="row">
+			<div class="col-md-12 barra">
+        		<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<h3 class="text-center titleNav">
+							 Modo Linear
+						</h3>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+
+							<li class="dropdown">
+
+								<a href="#" class="dropdown-toggle btMenu" data-toggle="dropdown">
+									<img class = "imgMenu" src = "img/menu1.png"></img>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<center>
+											<h class="text-center titleMenu">
+												<b>Meu tesouro está:</b>
+											</h>
+											<br> <br/>
+										</center>
+										<input name = "mltesouro" id = "mltesouro" type = "text" value = ""/>
+	                  					<center>
+											<img src = "img/ilha.png" id = "mitesouro"/>
+										</center>
+	                  					<center>
+											<input name = "mntesouro" id = "mntesouro" type = "text" value = ""/>
+										</center>
+									</li>
+									<li class="divider">
+									</li>
+									<li>
+										<center>
+											<h class="text-center titleMenu">
+												<b>Tesouro adversário está:</b>
+											</h>
+											<br> <br/>
+										</center>
+										<input name = "oltesouro" id = "oltesouro" type = "text" value = "?" readonly/>
+	                  					<center>
+											<img src = "img/ilha.png" id = "oitesouro"/>
+										</center>
+	                  					<center>
+											<input name = "ontesouro" id = "ontesouro" type = "text" value = ""/>
+										</center>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class = "titleTab">Meu Tabuleiro</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 tabuleiro">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class = "titleTab">Tabuleiro do Oponente</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 tabuleiroOponente">
+				<!--ilha A-->
+                <input name = "oltab1" id = "oltab1" type = "text" value = "A" readonly/>
+                <img src = "img/ilha.png" id = "oitab1" onclick = "escolheIlha(1)"/>
+                <input name = "ontab1" id = "ontab1" type = "text" value = ""/>
+				<!--ilha B-->
+                <input name = "oltab2" id = "oltab2" type = "text" value = "B" readonly/>
+                <img src = "img/ilha.png" id = "oitab2" onclick = "escolheIlha(2)"/>
+                <input name = "ontab2" id = "ontab2" type = "text" value = ""/>
+				<!--ilha C-->
+                <input name = "oltab3" id = "oltab3" type = "text" value = "C" readonly/>
+                <img src = "img/ilha.png" id = "oitab3" onclick = "escolheIlha(3)"/>
+                <input name = "ontab3" id = "ontab3" type = "text" value = ""/>
+                <!--ilha D-->
+                <input name = "oltab4" id = "oltab4" type = "text" value = "D" readonly/>
+                <img src = "img/ilha.png" id = "oitab4" onclick = "escolheIlha(4)"/>
+                <input name = "ontab4" id = "ontab4" type = "text" value = ""/>
+                <!--ilha E-->
+                <input name = "oltab5" id = "oltab5" type = "text" value = "E" readonly/>
+                <img src = "img/ilha.png" id = "oitab5" onclick = "escolheIlha(5)"/>
+                <input name = "ontab5" id = "ontab5" type = "text" value = ""/>
+                <!--ilha F-->
+                <input name = "oltab6" id = "oltab6" type = "text" value = "F" readonly/>
+                <img src = "img/ilha.png" id = "oitab6" onclick = "escolheIlha(6)"/>
+                <input name = "ontab6" id = "ontab6" type = "text" value = ""/>
+                <!--ilha G-->
+                <input name = "oltab7" id = "oltab7" type = "text" value = "G" readonly/>
+                <img src = "img/ilha.png" id = "oitab7" onclick = "escolheIlha(7)"/>
+                <input name = "ontab7" id = "ontab7" type = "text" value = ""/>
+                <!--ilha H-->
+                <input name = "oltab8" id = "oltab8" type = "text" value = "H" readonly/>
+                <img src = "img/ilha.png" id = "oitab8" onclick = "escolheIlha(8)"/>
+                <input name = "ontab8" id = "ontab8" type = "text" value = ""/>
+                <!--ilha I-->
+                <input name = "oltab9" id = "oltab9" type = "text" value = "I" readonly/>
+                <img src = "img/ilha.png" id = "oitab9" onclick = "escolheIlha(9)"/>
+                <input name = "ontab9" id = "ontab9" type = "text" value = ""/>
+                <!--ilha J-->
+                <input name = "oltab10" id = "oltab10" type = "text" value = "J" readonly/>
+                <img src = "img/ilha.png" id = "oitab10" onclick = "escolheIlha(10)"/>
+                <input name = "ontab10" id = "ontab10" type = "text" value = ""/>
+                <!--ilha K-->
+                <input name = "oltab11" id = "oltab11" type = "text" value = "K" readonly/>
+                <img src = "img/ilha.png" id = "oitab11" onclick = "escolheIlha(11)"/>
+                <input name = "ontab11" id = "ontab11" type = "text" value = ""/>
+                <!--ilha L-->
+                <input name = "oltab12" id = "oltab12" type = "text" value = "L" readonly/>
+                <img src = "img/ilha.png" id = "oitab12" onclick = "escolheIlha(12)"/>
+                <input name = "ontab12" id = "ontab12" type = "text" value = ""/>
+                <!--ilha M-->
+                <input name = "oltab13" id = "oltab13" type = "text" value = "M" readonly/>
+                <img src = "img/ilha.png" id = "oitab13" onclick = "escolheIlha(13)"/>
+                <input name = "ontab13" id = "ontab13" type = "text" value = ""/>
+				<!--ilha N-->
+                <input name = "oltab14" id = "oltab14" type = "text" value = "N" readonly/>
+                <img src = "img/ilha.png" id = "oitab14" onclick = "escolheIlha(14)"/>
+                <input name = "ontab14" id = "ontab14" type = "text" value = ""/>
+                <!--ilha O-->
+                <input name = "oltab15" id = "oltab15" type = "text" value = "O" readonly/>
+                <img src = "img/ilha.png" id = "oitab15" onclick = "escolheIlha(15)"/>
+                <input name = "ontab15" id = "ontab15" type = "text" value = ""/>
+                <!--ilha P-->
+                <input name = "oltab16" id = "oltab16" type = "text" value = "P" readonly/>
+                <img src = "img/ilha.png" id = "oitab16" onclick = "escolheIlha(16)"/>
+                <input name = "ontab16" id = "ontab16" type = "text" value = ""/>
+                <!--ilha Q-->
+                <input name = "oltab17" id = "oltab17" type = "text" value = "Q" readonly/>
+                <img src = "img/ilha.png" id = "oitab17" onclick = "escolheIlha(17)"/>
+                <input name = "ontab17" id = "ontab17" type = "text" value = ""/>
+                <!--ilha R-->
+                <input name = "oltab18" id = "oltab18" type = "text" value = "R" readonly/>
+                <img src = "img/ilha.png" id = "oitab18" onclick = "escolheIlha(18)"/>
+                <input name = "ontab18" id = "ontab18" type = "text" value = ""/>
+                <!--ilha S-->
+                <input name = "oltab19" id = "oltab19" type = "text" value = "S" readonly/>
+                <img src = "img/ilha.png" id = "oitab19" onclick = "escolheIlha(19)"/>
+                <input name = "ontab19" id = "ontab19" type = "text" value = ""/>
+                <!--ilha T-->
+                <input name = "oltab20" id = "oltab20" type = "text" value = "T" readonly/>
+                <img src = "img/ilha.png" id = "oitab20" onclick = "escolheIlha(20)"/>
+                <input name = "ontab20" id = "ontab20" type = "text" value = ""/>
+                <!--ilha U-->
+                <input name = "oltab21" id = "oltab21" type = "text" value = "U" readonly/>
+                <img src = "img/ilha.png" id = "oitab21" onclick = "escolheIlha(21)"/>
+                <input name = "ontab21" id = "ontab21" type = "text" value = ""/>
+                <!--ilha V-->
+                <input name = "oltab22" id = "oltab22" type = "text" value = "V" readonly/>
+                <img src = "img/ilha.png" id = "oitab22" onclick = "escolheIlha(22)"/>
+                <input name = "ontab22" id = "ontab22" type = "text" value = ""/>
+                <!--ilha W-->
+                <input name = "oltab23" id = "oltab23" type = "text" value = "W" readonly/>
+                <img src = "img/ilha.png" id = "oitab23" onclick = "escolheIlha(23)"/>
+                <input name = "ontab23" id = "ontab23" type = "text" value = ""/>
+                <!--ilha X-->
+                <input name = "oltab24" id = "oltab24" type = "text" value = "X" readonly/>
+                <img src = "img/ilha.png" id = "oitab24" onclick = "escolheIlha(24)"/>
+                <input name = "ontab24" id = "ontab24" type = "text" value = ""/>
+                <!--ilha Y-->
+                <input name = "oltab25" id = "oltab25" type = "text" value = "Y" readonly/>
+                <img src = "img/ilha.png" id = "oitab25" onclick = "escolheIlha(25)"/>
+                <input name = "ontab25" id = "ontab25" type = "text" value = ""/>
+                <!--ilha Z-->
+                <input name = "oltab26" id = "oltab26" type = "text" value = "Z" readonly/>
+                <img src = "img/ilha.png" id = "oitab26" onclick = "escolheIlha(26)"/>
+                <input name = "ontab26" id = "ontab26" type = "text" value = ""/>
+
+                <div class="modal fade" id="modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+          			  <div class="modal-dialog">
+          					<div class="modal-content">
+          						<div class="modal-header">
+          							<h4 class="modal-title" id="myModalLabel">
+          								<center>
+                              				Hora do Jogo!
+                          				</center>
+          							</h4>
+          						</div>
+          						<div class="modal-body">
+          							<h class = "modalText">Agora é a hora do jogo! Você precisa escolher uma ilha e dar um palpite, o resto o capitão Barba Cinza te explica!</h>
+          						</div>
+          						<div class="modal-footer">
+          							<button type="button" class="btn btn-success btOk" data-dismiss="modal">
+			                          	<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+			                            Ok
+	          						</button>
+          						</div>
+          					</div>
+
+          				</div>
+
+          			</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class = "footer">
+		<h>Gustavo Pinho. @2016 v1 desktop. </h>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+	<script src="js/desktop.js"></script>
+
+  </body>
+</html>

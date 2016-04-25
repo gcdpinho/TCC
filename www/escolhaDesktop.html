@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Caça ao Tesouro</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onselectstart='return false' ondragstart='return false' onload = "trocarFundo(); modalFirstTime(); zeraCookie()">
+
+	<div class="container-fluid jogo">
+		<div class="row">
+			<div class="col-md-12 barra">
+				<nav class="navbar navbar-default navbar" role="navigation">
+
+            <img class = "imgNav" src="img/navio2.png"></img>
+
+
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class = "col-md-12">
+				<h3 class="text-center title">
+					Modo Linear
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 tab">
+  				<!--ilha A-->
+                  <input name = "ltab1" id = "ltab1" type = "text" value = "A" readonly/>
+                  <img src = "img/ilha.png" id = "itab1" onclick = "escolheIlha(1)"/>
+                  <input name = "ntab1" id = "ntab1" type = "text" value = "" readonly/>
+  				<!--ilha B-->
+                  <input name = "ltab2" id = "ltab2" type = "text" value = "B" readonly/>
+                  <img src = "img/ilha.png" id = "itab2" onclick = "escolheIlha(2)"/>
+                  <input name = "ntab2" id = "ntab2" type = "text" value = "" readonly/>
+  				<!--ilha C-->
+                  <input name = "ltab3" id = "ltab3" type = "text" value = "C" readonly/>
+                  <img src = "img/ilha.png" id = "itab3" onclick = "escolheIlha(3)"/>
+                  <input name = "ntab3" id = "ntab3" type = "text" value = "" readonly/>
+                  <!--ilha D-->
+                  <input name = "ltab4" id = "ltab4" type = "text" value = "D" readonly/>
+                  <img src = "img/ilha.png" id = "itab4" onclick = "escolheIlha(4)"/>
+                  <input name = "ntab4" id = "ntab4" type = "text" value = "" readonly/>
+                  <!--ilha E-->
+                  <input name = "ltab5" id = "ltab5" type = "text" value = "E" readonly/>
+                  <img src = "img/ilha.png" id = "itab5" onclick = "escolheIlha(5)"/>
+                  <input name = "ntab5" id = "ntab5" type = "text" value = "" readonly/>
+                  <!--ilha F-->
+                  <input name = "ltab6" id = "ltab6" type = "text" value = "F" readonly/>
+                  <img src = "img/ilha.png" id = "itab6" onclick = "escolheIlha(6)"/>
+                  <input name = "ntab6" id = "ntab6" type = "text" value = "" readonly/>
+                  <!--ilha G-->
+                  <input name = "ltab7" id = "ltab7" type = "text" value = "G" readonly/>
+                  <img src = "img/ilha.png" id = "itab7" onclick = "escolheIlha(7)"/>
+                  <input name = "ntab7" id = "ntab7" type = "text" value = "" readonly/>
+                  <!--ilha H-->
+                  <input name = "ltab8" id = "ltab8" type = "text" value = "H" readonly/>
+                  <img src = "img/ilha.png" id = "itab8" onclick = "escolheIlha(8)"/>
+                  <input name = "ntab8" id = "ntab8" type = "text" value = "" readonly/>
+                  <!--ilha I-->
+                  <input name = "ltab9" id = "ltab9" type = "text" value = "I" readonly/>
+                  <img src = "img/ilha.png" id = "itab9" onclick = "escolheIlha(9)"/>
+                  <input name = "ntab9" id = "ntab9" type = "text" value = "" readonly/>
+                  <!--ilha J-->
+                  <input name = "ltab10" id = "ltab10" type = "text" value = "J" readonly/>
+                  <img src = "img/ilha.png" id = "itab10" onclick = "escolheIlha(10)"/>
+                  <input name = "ntab10" id = "ntab10" type = "text" value = "" readonly/>
+                  <!--ilha K-->
+                  <input name = "ltab11" id = "ltab11" type = "text" value = "K" readonly/>
+                  <img src = "img/ilha.png" id = "itab11" onclick = "escolheIlha(11)"/>
+                  <input name = "ntab11" id = "ntab11" type = "text" value = "" readonly/>
+                  <!--ilha L-->
+                  <input name = "ltab12" id = "ltab12" type = "text" value = "L" readonly/>
+                  <img src = "img/ilha.png" id = "itab12" onclick = "escolheIlha(12)"/>
+                  <input name = "ntab12" id = "ntab12" type = "text" value = "" readonly/>
+                  <!--ilha M-->
+                  <input name = "ltab13" id = "ltab13" type = "text" value = "M" readonly/>
+                  <img src = "img/ilha.png" id = "itab13" onclick = "escolheIlha(13)"/>
+                  <input name = "ntab13" id = "ntab13" type = "text" value = "" readonly/>
+  				<!--ilha N-->
+                  <input name = "ltab14" id = "ltab14" type = "text" value = "N" readonly/>
+                  <img src = "img/ilha.png" id = "itab14" onclick = "escolheIlha(14)"/>
+                  <input name = "ntab14" id = "ntab14" type = "text" value = "" readonly/>
+                  <!--ilha O-->
+                  <input name = "ltab15" id = "ltab15" type = "text" value = "O" readonly/>
+                  <img src = "img/ilha.png" id = "itab15" onclick = "escolheIlha(15)"/>
+                  <input name = "ntab15" id = "ntab15" type = "text" value = "" readonly/>
+                  <!--ilha P-->
+                  <input name = "ltab16" id = "ltab16" type = "text" value = "P" readonly/>
+                  <img src = "img/ilha.png" id = "itab16" onclick = "escolheIlha(16)"/>
+                  <input name = "ntab16" id = "ntab16" type = "text" value = "" readonly/>
+                  <!--ilha Q-->
+                  <input name = "ltab17" id = "ltab17" type = "text" value = "Q" readonly/>
+                  <img src = "img/ilha.png" id = "itab17" onclick = "escolheIlha(17)"/>
+                  <input name = "ntab17" id = "ntab17" type = "text" value = "" readonly/>
+                  <!--ilha R-->
+                  <input name = "ltab18" id = "ltab18" type = "text" value = "R" readonly/>
+                  <img src = "img/ilha.png" id = "itab18" onclick = "escolheIlha(18)"/>
+                  <input name = "ntab18" id = "ntab18" type = "text" value = "" readonly/>
+                  <!--ilha S-->
+                  <input name = "ltab19" id = "ltab19" type = "text" value = "S" readonly/>
+                  <img src = "img/ilha.png" id = "itab19" onclick = "escolheIlha(19)"/>
+                  <input name = "ntab19" id = "ntab19" type = "text" value = "" readonly/>
+                  <!--ilha T-->
+                  <input name = "ltab20" id = "ltab20" type = "text" value = "T" readonly/>
+                  <img src = "img/ilha.png" id = "itab20" onclick = "escolheIlha(20)"/>
+                  <input name = "ntab20" id = "ntab20" type = "text" value = "" readonly/>
+                  <!--ilha U-->
+                  <input name = "ltab21" id = "ltab21" type = "text" value = "U" readonly/>
+                  <img src = "img/ilha.png" id = "itab21" onclick = "escolheIlha(21)"/>
+                  <input name = "ntab21" id = "ntab21" type = "text" value = "" readonly/>
+                  <!--ilha V-->
+                  <input name = "ltab22" id = "ltab22" type = "text" value = "V" readonly/>
+                  <img src = "img/ilha.png" id = "itab22" onclick = "escolheIlha(22)"/>
+                  <input name = "ntab22" id = "ntab22" type = "text" value = "" readonly/>
+                  <!--ilha W-->
+                  <input name = "ltab23" id = "ltab23" type = "text" value = "W" readonly/>
+                  <img src = "img/ilha.png" id = "itab23" onclick = "escolheIlha(23)"/>
+                  <input name = "ntab23" id = "ntab23" type = "text" value = "" readonly/>
+                  <!--ilha X-->
+                  <input name = "ltab24" id = "ltab24" type = "text" value = "X" readonly/>
+                  <img src = "img/ilha.png" id = "itab24" onclick = "escolheIlha(24)"/>
+                  <input name = "ntab24" id = "ntab24" type = "text" value = "" readonly/>
+                  <!--ilha Y-->
+                  <input name = "ltab25" id = "ltab25" type = "text" value = "Y" readonly/>
+                  <img src = "img/ilha.png" id = "itab25" onclick = "escolheIlha(25)"/>
+                  <input name = "ntab25" id = "ntab25" type = "text" value = "" readonly/>
+                  <!--ilha Z-->
+                  <input name = "ltab26" id = "ltab26" type = "text" value = "Z" readonly/>
+                  <img src = "img/ilha.png" id = "itab26" onclick = "escolheIlha(26)"/>
+                  <input name = "ntab26" id = "ntab26" type = "text" value = "" readonly/>
+
+                <div class="modal fade" id="modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+          			  <div class="modal-dialog">
+          					<div class="modal-content">
+          						<div class="modal-header">
+          							<h4 class="modal-title" id="myModalLabel">
+          								<center>
+                              Modo Linear
+                          </center>
+          							</h4>
+          						</div>
+          						<div class="modal-body">
+          							<h class = "modalText">Você precisa escolher (clicar) uma <b>ilha</b> para esconder o seu tesouro. Depois é só clicar em selecionar.<br>Bom jogo!</h>
+          						</div>
+          						<div class="modal-footer">
+
+          							<button type="button" class="btn btn-success btOk" data-dismiss="modal">
+                          	<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            Ok
+          							</button>
+          						</div>
+          					</div>
+
+          				</div>
+
+          			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 btSelecionar">
+				<button class="btn btn-success btSelec" type="button">
+					<span class="glyphicon glyphicon-ok imgBtSelec" aria-hidden="true"></span>Selecionar
+				</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class = "footer">
+		<h>Gustavo Pinho. @2016 v1 desktop. </h>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/desktop.js"></script>
+
+  </body>
+</html>

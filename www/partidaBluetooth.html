@@ -1,0 +1,47 @@
+<html lang = "en">
+    <head>
+   	    <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <!-- tags padrão do framework -->
+        <meta name = "format-detection" content = "telephone=no">
+        <meta name = "msapplication-tap-highlight" content = "no">
+        <meta name = "viewport" content = "user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- fim -->
+        <title>Caça ao Tesouro</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/partidaBluetooth.css" rel = "stylesheet">
+        <link href = "css/background.css" rel = "stylesheet">
+    </head>
+
+    <body onload = "desativaVoltar();zera();">
+        <div class = "app">
+            <div class = "botão">
+                <button type = "submit" class = "btn btn-default" id = "linear" onclick = "jogarBluetooth(1)">Modo Linear</button>
+                <button type = "submit" class = "btn btn-default" id = "binário" onclick = "jogarBluetooth(2)">Modo Binário</button>
+                <button type = "submit" class = "btn btn-default" id = "hashing" onclick = "jogarBluetooth(3)">Modo Hashing</button>
+            </div>
+            <div class = "navio">
+                <a><img id = "iconeNavio" src = "img/navioPirata.png"></a>
+            </div>
+            <div class = "papagaio">
+                <a><img id = "iconePapagaio" src = "img/papagaioPirata.png"></a>
+            </div>
+            <div class = "autoFalante">
+                <a onclick = "changeSrc('imagem')"><img src = "img/autoFalanteOn.png" alt = "on" id = "imagem"/></a>
+            </div>
+            <div class = "titulo">
+                <a><img src = "img/backgroundTitulo.png"></a>
+            </div>
+            <div class = "voltar">
+                <a onclick = "javascript:location.href='jogar.html'"><img src = "img/botaoVoltar.png"/></a>
+            </div>
+            <di class = "desconectar">
+                <a onclick = "desconectar();"><img id = "sair" src = "img/sair.png"></a>
+            </di>
+        </div>
+        <script type = "text/javascript" src = "js/scripts.js"></script>
+        <script type = "text/javascript" src = "js/lib/jquery.js"></script>
+        <script type = "text/javascript" src = "js/partidaBluetooth.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
