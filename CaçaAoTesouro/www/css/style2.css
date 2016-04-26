@@ -1,0 +1,157 @@
+/* Definição do background (imagem na pasta img) */
+
+body {
+    background: url(../img/backgroundPergaminho.jpg) no-repeat center top fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Criação de um nova fonte (na pasta fonts) de nome title e aplicação no título */
+
+@font-face {
+    font-family: "title";
+    src: url(../fonts/JandaAppleCobbler.ttf) format("truetype");
+}
+
+.title {
+    font-family: "title";
+    margin-bottom: 0.5em;
+    font-size: 100px;
+}
+
+/* Alterações na imagem da direita */
+
+.imgLeft {
+    float: left;
+}
+
+#imgLeftImg {
+    width: 100%;
+}
+
+#imgLeftDiv {
+    width: 33%;
+}
+
+/* Alterações na imagem da esquerda */
+
+.imgRight {
+    float: right;
+}
+
+#imgRightDiv {
+    width: 32%;
+}
+
+#imgRightImg {
+    width: 55%;
+    float: left;
+}
+
+#imgRightImg2 {
+    width: 66%;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+/* Alterações nos botões */
+
+.btn-group-lg {
+    width: 100%;
+}
+
+.btMid {
+    float: left;
+    margin-left: 0em;
+    margin-top: 1em;
+    font-size: 0px;
+    width: 35%;
+}
+
+#btMain, #btMain1 {
+    margin-top: 1.2em;
+    font-size: 20px;
+    border-color: black;
+    border-radius: 30px;
+    background-size: 100% 100%;
+    background-image: url(../img/bottom1.png);
+    color: black;
+    outline: none;
+}
+
+#btMain:hover , #btMain1:hover{
+    background-image: none;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+#btMain {
+    padding: 7px;
+}
+
+.imgBt {
+    float: left;
+    margin-left: 1em;
+    font-size: 12px;
+}
+
+/* Alterações no menu configurações e da imageBottom(dropdown) */
+
+.dropdown-toggle {
+    border-radius: 30px 30px 0 0;
+    background-size: 100% 100%;
+    border-color: black;
+    background-image: url(../img/bottom1.png);
+}
+
+.open>.dropdown-toggle.btn-default:hover {
+    border-radius: 30px 0 0 0;
+    border-color: black;
+}
+
+.dropdown-toggle:hover {
+    border-color: black;
+}
+
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+    bottom: 0;
+    margin-bottom: 0em;
+}
+
+.dropdown-menu {
+    left: 3.5em;
+    min-width: 40em;
+    margin: 2px 0 0;
+    padding: 5px 0;
+    border-color: black;
+    border-radius: 0 30px 0 0;
+    background-color: #d4d4d4;
+    color: black;
+}
+
+.dropdown-menu>li>a {
+    clear: none;
+}
+
+.line, .disabled {
+    float: left;
+}
+
+.imgBottom {
+    float: right;
+    width: 60%;
+}
+
+#imgBottomImg {
+    float: left;
+    width: 35%;
+}
+
+.dropdown {
+    float: left;
+    margin-top: 1em;
+    font-size: 38px;
+}

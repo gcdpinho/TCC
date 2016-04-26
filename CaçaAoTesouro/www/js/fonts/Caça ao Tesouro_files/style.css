@@ -1,0 +1,63 @@
+body {
+    background-image: url(../img/papiro0.png);
+}
+
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/JandaAppleCobbler.ttf) format("truetype");
+}
+
+.title {
+    font-family: "font1";
+    font-size: 50px;
+    padding-bottom: 0.2em;
+}
+
+.imgLeft {
+    float: left;
+}
+
+#imgRightDiv {
+    width: 30%;
+}
+
+#imgLeftImg {
+    width: 100%;
+}
+
+#imgLeftDiv {
+    width: 38%;
+}
+
+#imgLeftImg {
+    width: 100%;
+}
+
+#btGroup {
+    width: 28%;
+}
+
+
+.imgRight {
+    float: right;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    font-size: 4px;
+}
+
+.btMid {
+    float: left;
+    margin-left: 0.1em;
+    margin-top: 1em;
+    font-size: 27px;
+}
+
+#btMain {
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+.config {
+    padding-bottom: 1em;
+    font-size: 19px;
+}
