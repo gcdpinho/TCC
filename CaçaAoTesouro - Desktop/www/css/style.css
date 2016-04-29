@@ -1,0 +1,318 @@
+/* Definição do background (imagem na pasta img) */
+
+body {
+    background: url(../img/back2.jpg) no-repeat center top fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Contest-fluid (all - footer) */
+
+.all {
+    min-height: 100%;
+}
+
+.jogo {
+    min-height: 100%;
+    display: none;
+}
+/* Criação de um nova fonte (na pasta fonts) de nome title e aplicação no título */
+
+@font-face {
+    font-family: "title";
+    src: url(../fonts/JandaAppleCobbler.ttf) format("truetype");
+}
+
+.title {
+    font-family: "title";
+    margin-bottom: 0.5em;
+    font-size: 100px;
+}
+
+.title:hover {
+    cursor: default;
+}
+
+/* Alterações na imagem da direita */
+
+.imgLeft {
+    float: left;
+}
+
+#imgLeftImg {
+    width: 100%;
+}
+
+#imgLeftDiv {
+    width: 32%;
+}
+
+/* Alterações na imagem da esquerda */
+
+.imgRight {
+    float: right;
+}
+
+#imgRightDiv {
+    width: 32%;
+}
+
+#imgRightImg {
+    width: 45%;
+    margin-top: 1em;
+    margin-right: 7em;
+}
+
+/* Alterações nos botões */
+
+.imgBt {
+    width: 10%;
+}
+
+.btn-group-lg {
+    width: 100%;
+}
+
+.btMid {
+    float: left;
+    margin-left: 0em;
+    margin-top: 1em;
+    width: 36%;
+}
+
+#btMain, #btMain1 {
+    margin-top: 1.2em;
+    font-size: 25px;
+    border-color: black;
+    border-radius: 2px;
+    background-image: url(../img/bottom1.png);
+    background-size: 100% 100%;
+    color: black;
+    outline: none;
+    height: 2.5em;
+}
+
+#btMain:hover , #btMain1:hover{
+    background-image: none;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+#btMain {
+    padding: 7px;
+}
+
+/* Alterações na imageBottom */
+
+.imgBottom {
+    float: left;
+    width: 21.5%;
+}
+
+/* Alteração do footer*/
+
+.footer {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.footer {
+    cursor: default;
+}
+
+/* Navbar (barra de menu) */
+
+.titlePartida {
+    cursor: default;
+}
+
+.imgOp {
+
+    width: 20%;
+}
+
+.goPartida {
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    background-color: #f1f1f1;
+}
+
+.navbar-nav{
+    width: 79.5%
+}
+
+.navbar-right{
+    width: 70px;
+}
+
+.partida{
+    width: 20%;
+}
+
+.barra {
+    padding: 0;
+}
+
+.navbar-default {
+    border-radius: 0;
+    color: black;
+}
+
+.imgNav {
+    width: 5%;
+}
+
+.navbar {
+    background-color: #f1f1f1;
+}
+
+.titleNav {
+    font-family: "title";
+    font-size: 22px;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: black;
+    cursor: default;
+}
+
+.btMenu {
+    float: right;
+    width: 100%;
+}
+
+.imgMenu {
+    float: right;
+    width: 100%;
+}
+
+#mltesouro, #oltesouro {
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+#mntesouro, #ontesouro {
+    text-align: center;
+    width: 28%;
+}
+
+.titleMenu {
+    cursor: default;
+}
+
+/* Aleterações no tabuleiro e botão Selecionar*/
+
+.tab {
+    margin-top: 4%;
+    padding-left: 5px;
+}
+
+#ntab1, #ntab2, #ntab3, #ntab4, #ntab5, #ntab6, #ntab7, #ntab8, #ntab9, #ntab10, #ntab11, #ntab12, #ntab13,
+#ntab14, #ntab15, #ntab16, #ntab17, #ntab18, #ntab19, #ntab20, #ntab21, #ntab22, #ntab23, #ntab24, #ntab25, #ntab26 {
+    text-align: center;
+}
+
+#itab1:hover, #itab2:hover, #itab3:hover, #itab4:hover, #itab5:hover, #itab6:hover, #itab7:hover, #itab8:hover,
+#itab9:hover, #itab10:hover, #itab11:hover, #itab12:hover, #itab13:hover, #itab14:hover, #itab15:hover, #itab16:hover,
+#itab17:hover, #itab18:hover, #itab19:hover, #itab20:hover, #itab21:hover, #itab22:hover, #itab23:hover, #itab24:hover,
+#itab25:hover, #itab26:hover {
+    background-color: #f1f1f1;
+    cursor:pointer;
+}
+
+.btSelecionar, .btPalpite {
+    text-align: center;
+}
+
+.btSelec, .btPalp {
+    width: 10em;
+    font-size: 20px;
+    height: 2.5em;
+    color:black;
+    background-color: #3EC53E;
+    border-color: black;
+}
+
+.btSelec:hover {
+    border-color: black;
+}
+
+.imgBtSelec {
+    padding-right: 1em;
+}
+
+/* Alterações no modal */
+
+.modalText {
+    font-size: 16px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.btOk {
+    color:black;
+    background-color: #3EC53E;
+    border-color: black;
+}
+
+.cbModal {
+    float: left;
+    background-color: #E2231D;
+    margin-left: 0.5em;
+}
+
+.btNo{
+    color: black;
+    border-color: black;
+}
+
+/* Alterações no tabuleiro do jogo */
+
+#mntab1, #mntab2, #mntab3, #mntab4, #mntab5, #mntab6, #mntab7, #mntab8, #mntab9, #mntab10, #mntab11, #mntab12, #mntab13,
+#mntab14, #mntab15, #mntab16, #mntab17, #mntab18, #mntab19, #mntab20, #mntab21, #mntab22, #mntab23, #mntab24, #mntab25, #mntab26 {
+    text-align: center;
+}
+
+#ontab1, #ontab2, #ontab3, #ontab4, #ontab5, #ontab6, #ontab7, #ontab8, #ontab9, #ontab10, #ontab11, #ontab12, #ontab13,
+#ontab14, #ontab15, #ontab16, #ontab17, #ontab18, #ontab19, #ontab20, #ontab21, #ontab22, #ontab23, #ontab24, #ontab25, #ontab26 {
+    text-align: center;
+}
+
+#oitab1:hover, #oitab2:hover, #oitab3:hover, #oitab4:hover, #oitab5:hover, #oitab6:hover, #oitab7:hover, #oitab8:hover,
+#oitab9:hover, #oitab10:hover, #oitab11:hover, #oitab12:hover, #oitab13:hover, #oitab14:hover, #oitab15:hover, #oitab16:hover,
+#oitab17:hover, #oitab18:hover, #oitab19:hover, #oitab20:hover, #oitab21:hover, #oitab22:hover, #oitab23:hover, #oitab24:hover,
+#oitab25:hover, #oitab26:hover {
+    background-color: #f1f1f1;
+    cursor:pointer;
+}
+
+.btPalpite {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.titleTab {
+    color: black;
+    cursor: default;
+}
+
+.tabuleiro {
+    margin-bottom: 2%;
+    padding-left: 5px;
+}
+
+.tabuleiroOponente{
+    padding-left: 5px;
+}
