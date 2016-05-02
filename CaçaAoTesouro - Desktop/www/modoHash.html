@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Caça ao Tesouro</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onselectstart='return false' ondragstart='return false' onload = "inicioJogo(); varreTab()">
+
+	<div class="container-fluid jogo">
+		<div class="row">
+			<div class="col-md-12 barra">
+        		<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<h3 class="text-center titleNav">
+							 Modo Hashing
+						</h3>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<h3 class="text-center titlePartida">
+								 Partida 1
+							</h3>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+
+							<li class="dropdown">
+
+								<a href="#" class="dropdown-toggle btMenu" data-toggle="dropdown">
+									<img class = "imgMenu" src = "img/menu1.png"></img>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<center>
+											<h class="text-center titleMenu">
+												<b>Meu tesouro está:</b>
+											</h>
+											<br> <br/>
+										</center>
+										<input name = "mltesouro" id = "mltesouro" type = "text" value = "" readonly/>
+	                  					<center>
+											<img src = "img/ilha.png" id = "mitesouro"/>
+										</center>
+	                  					<center>
+											<input name = "mntesouro" id = "mntesouro" type = "text" value = "" readonly/>
+										</center>
+									</li>
+									<li class="divider">
+									</li>
+									<li>
+										<center>
+											<h class="text-center titleMenu">
+												<b>Tesouro adversário está:</b>
+											</h>
+											<br> <br/>
+										</center>
+										<input name = "oltesouro" id = "oltesouro" type = "text" value = "?" readonly/>
+	                  					<center>
+											<img src = "img/ilha.png" id = "oitesouro"/>
+										</center>
+	                  					<center>
+											<input name = "ontesouro" id = "ontesouro" type = "text" value = ""/>
+										</center>
+									</li>
+									<li class="divider">
+									</li>
+									<li class = "goPartida">
+										<center>
+											<img class = 'imgOp' src = 'img/partida2.png'/><b>Partida 2</b>
+										</center>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3 class = "titleTab">Meu Tabuleiro</h3>
+			</div>
+            <div class="col-md-6">
+				<h3 class = "titleTab">Tabuleiro do Oponente</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 tabuleiro">
+				<table id = "myTab">
+                </table>
+			</div>
+            <div class="col-md-6 tabuleiroOponente">
+				<table id = "opoTab">
+                </table>
+            </div>
+		</div>
+
+                <div class="modal fade" id="modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+          			  <div class="modal-dialog">
+          					<div class="modal-content">
+          						<div class="modal-header">
+          							<h4 class="modal-title" id="myModalLabel">
+          								<center>
+                              				Hora do Jogo!
+                          				</center>
+          							</h4>
+          						</div>
+          						<div class="modal-body">
+          							<h class = "modalText">Agora é a hora do jogo! Você precisa escolher uma ilha e dar um palpite, o resto o capitão Barba Cinza te explica!</h>
+          						</div>
+          						<div class="modal-footer">
+          							<button type="button" class="btn btn-success btOk" data-dismiss="modal">
+			                          	<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+			                            Ok
+	          						</button>
+          						</div>
+          					</div>
+
+          				</div>
+
+          			</div>
+		<div class="row">
+			<div class="col-md-12 btPalpite">
+				<button class="btn btn-success btPalp" type="button" onclick = "palpite()">
+					<span class="glyphicon glyphicon-ok imgBtSelec" aria-hidden="true"></span>Palpite
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class = "footer">
+		<h>Gustavo Pinho. @2016 v1 desktop. </h>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+	<script src="js/desktop.js"></script>
+	<script src="js/noBack.js"></script>
+
+  </body>
+</html>

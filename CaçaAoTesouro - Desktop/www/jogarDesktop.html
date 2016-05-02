@@ -14,7 +14,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body onselectstart='return false' ondragstart='return false' onload="window.localStorage.setItem('binario', 'false');">
+  <body onselectstart='return false' ondragstart='return false' onload="zerarModo()">
 
     <div class="container-fluid all">
 		<div class="row">
@@ -37,7 +37,7 @@
 					<button id = "btMain1" class="btn btn-default" type="button" onclick = "goBinario()">
 						Binário
 					</button>
-					<button id = "btMain1" class="btn btn-default" type="button" disabled>
+					<button id = "btMain1" class="btn btn-default" type="button" onclick = "goHash()">
 						Hashing
 					</button>
 				</div>

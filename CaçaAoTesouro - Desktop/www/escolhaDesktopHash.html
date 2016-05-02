@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Caça ao Tesouro</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onselectstart='return false' ondragstart='return false' onload = "trocarFundo(); modalFirstTime(); zeraCookie()">
+
+	<div class="container-fluid jogo">
+		<div class="row">
+			<div class="col-md-12 barra">
+				<nav class="navbar navbar-default navbar" role="navigation">
+
+            <img class = "imgNav" src="img/navio2.png"></img>
+
+
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class = "col-md-12">
+				<h3 class="text-center title">
+					Modo Linear
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 tab">
+  				<table id = "table">
+                </table>
+
+                <div class="modal fade" id="modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+          			  <div class="modal-dialog">
+          					<div class="modal-content">
+          						<div class="modal-header">
+          							<h4 class="modal-title" id="myModalLabel">
+          								<center>
+                              Modo Linear
+                          </center>
+          							</h4>
+          						</div>
+          						<div class="modal-body">
+          							<h class = "modalText">Você precisa escolher (clicar) uma <b>ilha</b> para esconder o seu tesouro. Depois é só clicar em selecionar.<br>Bom jogo!</h>
+          						</div>
+          						<div class="modal-footer">
+
+          							<button type="button" class="btn btn-success btOk" data-dismiss="modal">
+                          	<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            Ok
+          							</button>
+          						</div>
+          					</div>
+
+          				</div>
+
+          			</div>
+			</div>
+			<div class="col-md-4 btSelecionar">
+				<button class="btn btn-success btSelec" type="button">
+					<span class="glyphicon glyphicon-ok imgBtSelec" aria-hidden="true"></span>Selecionar
+				</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class = "footer">
+		<h>Gustavo Pinho. @2016 v1 desktop. </h>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/desktop.js"></script>
+
+  </body>
+</html>

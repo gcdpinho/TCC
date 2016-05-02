@@ -13,6 +13,16 @@ html, body {
     height: 100%;
 }
 
+th {
+    width: 1%;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding-bottom: 42%;
+}
+
 /* Contest-fluid (all - footer) */
 
 .all {
@@ -249,6 +259,14 @@ html, body {
 
 .imgBtSelec {
     padding-right: 1em;
+}
+
+/* Hashing */
+
+#table, #myTab, #opoTab {
+    border: 1px solid black;
+    color:black;
+    margin-left: 1%;
 }
 
 /* Alterações no modal */
