@@ -1,9 +1,0 @@
-diff a/Frontend/assets/styl/guide.styl b/Frontend/assets/styl/guide.styl	(rejected hunks)
-@@ -309,7 +309,6 @@
- .selectric-select-default.selectric-open 
- 	width 196px !important
- 	height 171px !important
--<<<<<<< HEAD
- 
- .selectric .label
- 	font-family arial !important
