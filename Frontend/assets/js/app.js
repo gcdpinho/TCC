@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	
+	$('#ilha-O').on('click', function () {
+  		$('#vitoria').focus();
+	});
 	setTimeout(function(){ 
 		$('#control-progress-bar').attr("style", 'padding-right: 20%;');
 		setTimeout(function(){ 
