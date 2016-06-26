@@ -5,12 +5,12 @@ layout: default
 
 <main class="placar">
 	<div class="container">
-		<div class="ajuda">
-			<div class="sprite ancora"></div>
+		<div class="ajuda" id="bt-ajuda">
+			<img src="Content/img/ancora_01.png" alt="" class="img-responsive">
 		</div>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2" style="text-align: center; padding: 0;">
-				<img src="Content/img/pirata1.png" class="img-responsive" style="margin-top: 4em;"/>
+				<img src="Content/img/pirata2.png" class="img-responsive" style="margin-top: 4em;"/>
 				<div class="pontos">
 					<span class="adversario">
 						P
@@ -20,7 +20,7 @@ layout: default
 					</span>
 				</div>
 			</div>
-			<div class="col-xs-6" style="padding-top: 28%;">
+			<div class="col-xs-6" style="padding-top: 13%;">
 				<div class="col-xs-4">
 					<div class="area1">
 						<img src="Content/img/bandeira-vermelha.png" class="img-responsive">
@@ -47,8 +47,6 @@ layout: default
 				</div>
 			</div>
 		</div>
-		<div class="config">
-			<div class="sprite leme"></div>
-		</div>
+		{{>menu-config}}
 	</div>	
 </main>

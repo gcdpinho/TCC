@@ -4,8 +4,8 @@ layout: game
 ---
 <main class="escolha-ilha">
 	<div class="container">
-		<div class="ajuda">
-			<div class="sprite ancora"></div>
+		<div class="ajuda" id="bt-ajuda">
+			<img src="Content/img/ancora_01.png" alt="" class="img-responsive">
 		</div>
 		<div class="row">
 			
@@ -148,34 +148,9 @@ layout: game
 							<span class="palpites text-uppercase">Palpites</span>
 						</div>
 					</div>
-					<div class="modal fade">
-						<div class="modal-vitoria center-block">
-							<div class="header-modal">
-						        <h2 class="fs20 roboto-black text-uppercase text-center marrom">você perdeu!</h2>
-						    </div>
-						   	
-						   	<div class="body-modal">
-       							<img src="Content/img/derrota.png" alt="Imagem de derrota" class="img-responsive roboto-black center-block img-vitoria">
-       							<p class="mt10 mb0 fs10 roboto-black center-block text-uppercase text-center marrom wt60">O Pirata Barba Cinza encontrou seu tesouro, e precisou de somente</p>
-       							<h3 class="mt5 fs20 roboto-black vinho text-uppercase text-center"><span id="nr-palpites">2</span> <span class="word-palpites">palpites</span>!</h3>
-       							<div class="row">
-       								<div class="col-xs-6">
-       									<div class="ajuda pull-right">
-											<img src="Content/img/ancora_03.png" class="img-responsive center-block" alt="">
-										</div>
-       								</div>
-       								<div class="col-xs-6">
-       									<div class="volta">
-											<img src="Content/img/voltar.png" class="img-responsive center-block" alt="">
-										</div>
-       								</div>	
-       							</div>
-	       							
-									
-								
-      						</div>
-						</div>
-					</div>
+
+					
+					
 					<div class="row">
 						<div class="col-xs-2 ilha" id="ilha-W">
 							<span class="letra-ilha">W</span>
@@ -204,11 +179,10 @@ layout: game
 				</div>
 			</div>
 		</div>
-		<div class="desistir">
-			<div class="sprite close-ossos"></div>
+		{{>modal-desistir}}
+		<div class="desistir" id="bt-desistir">
+			<img src="Content/img/close.png" alt="" class="img-responsive">
 		</div>
-		<div class="config">
-			<div class="sprite leme"></div>
-		</div>
+		{{>menu-config}}
 	</div>
 </main>

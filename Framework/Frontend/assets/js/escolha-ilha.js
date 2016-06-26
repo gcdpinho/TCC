@@ -12,7 +12,11 @@
 	app.eventsPage = function(){
 		var template = Handlebars.compile(app.template.tpl_bau);
 		var html = template();
+		$(".ilha-tabela").on("click", function(){
+			$(".ilha-tabela").removeClass('selecionada');
+			$(this).addClass('selecionada');
 
+		});
 		$('.ilha').on('click', function(){
 			$('.ilha').children('.bau').remove();
 			$('.ilha').removeClass('selecionada');
@@ -28,7 +32,9 @@
 
 			$('.bandeira').show();
 
-			$('.title').text("Dialogo com o pirata!")
+			$('.title').text("");
+			$('.title').append('<span style="font-size: 1.5em;">D</span>ialogo com o Pirata');
+			
 		});
 	};
 

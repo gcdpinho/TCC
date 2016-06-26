@@ -5,8 +5,8 @@ layout: default
 
 <main class="selecao">
 	<div class="container">
-		<div class="ajuda">
-			<div class="sprite ancora"></div>
+		<div class="ajuda" id="bt-ajuda">
+			<img src="Content/img/ancora_01.png" alt="" class="img-responsive">
 		</div>
 		<div class="col-xs-offset-1 col-xs-5" style="margin-top: 14%;">
 			<button class="btn text-uppercase" style="margin-bottom: 1em;"><label class="sprite single"></label><span>sigleplayer<span></button>
@@ -15,8 +15,6 @@ layout: default
 		<div class="col-xs-6 barco">
 			<img src="Content/img/barco.png" class="img-responsive">
 		</div>
-		<div class="config">
-			<div class="sprite leme"></div>
-		</div>
+		{{>menu-config}}
 	</div>
 </main>

@@ -4,8 +4,8 @@ layout: game
 ---
 <main class="escolha-ilha barba-cinza">
 	<div class="container">
-		<div class="ajuda">
-			<div class="sprite ancora"></div>
+		<div class="ajuda" id="bt-ajuda">
+			<img src="Content/img/ancora_01.png" alt="" class="img-responsive">
 		</div>
 		<div class="row">
 				<div class="col-xs-offset-1 col-xs-7">
@@ -172,11 +172,10 @@ layout: game
 				<div class='sprite bandeira-verde'></div>
 			</div>
 		</div>
-		<div class="desistir">
-			<div class="sprite close-ossos"></div>
+		{{>modal-desistir}}
+		<div class="desistir" id="bt-desistir">
+			<img src="Content/img/close.png" alt="" class="img-responsive">
 		</div>
-		<div class="config">
-			<div class="sprite leme"></div>
-		</div>
+		{{>menu-config}}
 	</div>
 </main>
