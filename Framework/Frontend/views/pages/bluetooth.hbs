@@ -4,30 +4,30 @@ layout: default
 ---
 
 <main class="bluetooth">
-	<div class="container">	
-		<div class="ajuda" id="bt-ajuda">
+	<div class="container">
+		<div class="ajuda" id="bt-ajuda" onclick="location.href='tela-jogar.html'">
 			<img src="Content/img/ancora_01.png" alt="" class="img-responsive">
 		</div>
 		<div class="row">
-			<div class="col-xs-5" style="margin-left: 30.333333%;">
-				<div class="row" style="text-align: center; margin-top: -12%;">
-					<div class="col-xs-9">	
+			<div class="col-xs-5 ml30pc">
+				<div class="row text-center mt-12pc">
+					<div class="col-xs-9">
 						<h3 class="text-uppercase title-blue text-left">bluetooth</h3>
 
 						<!-- <input type="checkbox" name="checkbox-bluetooth" data-inverse="true"> -->
-						<!-- <div class="fundo-button">	
+						<!-- <div class="fundo-button">
 							<button class="ativado"></button>
 							<button class="desativado"></button>
 						</div> -->
 					</div>
 					<div class="col-xs-3">
-						
+						<div class="toggle toggle-light"></div>
 					</div>
-				</div>	
-				<div class="box" style="text-align: center;">
+				</div>
+				<div class="box text-center">
 					<span class="title-box text-uppercase">dispositivos</span>
 					<div class="border"></div>
-					
+
 					<div class="dipositivos">
 						<ul class="list-unstyled list-devices">
 							<li class="device">
@@ -52,7 +52,7 @@ layout: default
 							</li>
 						</ul>
 					</div>
-					
+
 					<span class="title-box text-uppercase">encontrados</span>
 					<div class="border"></div>
 
@@ -63,7 +63,7 @@ layout: default
 						<button class="procurar text-uppercase">Procurar</button>
 						<button class="cancelar text-uppercase">cancelar</button>
 					</div>
-				</div>	
+				</div>
 			</div>
 		</div>
 		{{>menu-config}}

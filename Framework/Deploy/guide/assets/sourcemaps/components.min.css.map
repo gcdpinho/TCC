@@ -1,0 +1,1 @@
+{"version":3,"sources":["slider/slider.styl"],"names":[],"mappings":"AAEA,wBACC,iBAAiB","file":"components.min.css","sourceRoot":"/source/","sourcesContent":["@import 'nib'\r\n\r\n[data-component=\"Slider\"]{\r\n\tbackground-color:green;\r\n}\r\n"]}
