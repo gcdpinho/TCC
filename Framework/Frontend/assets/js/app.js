@@ -394,25 +394,41 @@ function modoJogo(modo){
 
 function jogar(){
 	var moeda = Math.floor((Math.random() * 2));
-	//voce começa
-	if (moeda == 0)
-		location.href = "escolhaIlha-barba-cinza.html";
+	var modo = localStorage.getItem("modo");
 
-	//barba cinza começa
-	else
-		location.href = "jogar.html";
+	if (modo == 3){
+		if (moeda == 0)
+			location.href = "modo-tabela-barba-cinza.html";
+
+		//barba cinza começa
+		else
+			location.href = "modo-tabela-jogar.html";
+	}
+	else {
+		//voce começa
+		if (moeda == 0)
+			location.href = "escolhaIlha-barba-cinza.html";
+
+		//barba cinza começa
+		else
+			location.href = "jogar.html";
+	}
 }
 
 $("#mLetra").text(localStorage.getItem('minhaLetra')+" ");
 $("#mNum").text(localStorage.getItem('meuNum'));
 $("#opoNum").text(localStorage.getItem('opoIlha'));
 
-var mTab = localStorage.getItem("meuTab").split(',');
+var mTab = [];
+mTab = localStorage.getItem("meuTab").split(',');
 for (i=0; i<26; i++)
 	$('.'+(i+1)).text(mTab[i]);
 
-var opoTab = localStorage.getItem("opoTab").split(',');
-var rep = localStorage.getItem("mRep").split(',');
+var opoTab = [];
+opoTab = localStorage.getItem("opoTab").split(',');
+var rep = [];
+rep = localStorage.getItem("mRep").split(',');
+
 for (i=0; i<26; i++){
 	$('.opo-'+(i+1)).text(opoTab[i]);
 	if ($('.opo-'+(i+1)).length == 1)
@@ -463,6 +479,8 @@ if ($('.jogar').length != 0){
 		palpite = Math.floor((Math.random() * 26));
 		while (haveElement(palpite, repString))
 			palpite = Math.floor((Math.random() * 26));
+
+		auxThis = $('#ilha-'+letraOpo(palpite));
 	}
 	else
 		if (modo == "2"){
@@ -485,22 +503,52 @@ if ($('.jogar').length != 0){
 					z++;
 				}
 			localStorage.setItem('novoTab', novoTabAux);
+			auxThis = $('#ilha-'+letraOpo(palpite));
 		}
-	auxThis = $('#ilha-'+letraOpo(palpite));
-	var novoRep = [];
+		else {
+			var palpitesHash = localStorage.getItem('palpitesHash').split(',');
 
-	for (i=0; i<26; i++)
-		if (parseInt(palpite) == i)
-			novoRep[i] = i;
-		else
-			novoRep[i] = rep[i];
+			var palpite = Math.random() * palpitesHash.length | 0;
 
-	localStorage.setItem('opoRep', novoRep);
+			var novoPalpiteHash = [];
+			var z = 0;
+
+			for (i=0; i<parseInt(palpite); i++)
+				novoPalpiteHash[i] = palpitesHash[i];
+
+			for (i=parseInt(palpite)+1; i<palpitesHash.length; i++)
+				novoPalpiteHash[i-parseInt(palpite)-1] = palpitesHash[i];
+
+			localStorage.setItem('palpitesHash', novoPalpiteHash);
+			palpite = palpitesHash[palpite];
+		}
+
+
 
 	setTimeout(function(){
+
+		if (modo == 3){
+			var letra = letraOpo(palpite);
+			//alert(palpitesHash[palpite]);
+			for (i=0; i<10; i++)
+				for (j=0; j<4; j++)
+					if ($('.coluna'+i+j).children('.letra-ilha').text() == letra)
+						auxThis = $('.coluna'+i+j);
+		}
+		var novoRep = [];
+
+		for (i=0; i<26; i++)
+			if (parseInt(palpite) == i)
+				novoRep[i] = i;
+			else
+				novoRep[i] = rep[i];
+
+		localStorage.setItem('opoRep', novoRep);
+
 		var novoPalp = parseInt($('.qt-palpites').text())+1;
 		$('.qt-palpites').text(novoPalp);
 		localStorage.setItem("opoPalp", novoPalp);
+		$(".config").off('click');
 		$('.title').text("");
 		$('.title').append('<span style="font-size: 1.5em;">V</span>erificando...');
 		auxThis.children('.numero').addClass('gold');
@@ -518,7 +566,10 @@ if ($('.jogar').length != 0){
 				$('.title').append('<span style="font-size: 1.5em;">A</span>hhh, eu errei! <span style="font-size: 1.5em;">S</span>orte a sua!');
 				auxThis.children('.xis').css('display', 'block');
 				setTimeout(function(){
-				location.href = "escolhaIlha-barba-cinza.html";
+					if (modo != 3)
+						location.href = "escolhaIlha-barba-cinza.html";
+					else
+						location.href = "modo-tabela-barba-cinza.html";
 				}, 2500);
 			}
 		}, 2000);
@@ -541,19 +592,58 @@ if (window.sidebar) {
     document.onclick = desbloquear;
 }
 
-if ($('.modo-tabela').length != 0){
+if ($('.escolha-tabela').length != 0){
 	var meuTab = localStorage.getItem('meuTab').split(',');
 	var meuHash = localStorage.getItem('meuHash').split(',');
 	var z = 0;
-	alert(meuHash);
-	for (i=0; i<9; i++){
+
+	for (i=0; i<10; i++){
 		for (j=0, size=parseInt(meuHash[i]); j<size; j++){
-			$('.coluna'+i+j).css('padding', '0%');
 			$('.coluna'+i+j).children('.letra-ilha').text(letraOpo(z));
-			$('.coluna'+i+j).children('.img-ilha').css('display', 'block');
-			$('.coluna'+i+j).children('.numero').css('display','block');
+			$('.coluna'+i+j).children('.letra-ilha').css('visibility', 'visible');
+			$('.coluna'+i+j).children('.img-ilha').css('visibility', 'visible');
+			$('.coluna'+i+j).children('.numero').css('visibility','visible');
 			$('.coluna'+i+j).children('.numero').text(meuTab[z]);
+			$('.coluna'+i+j).children('.numero').attr('value', 'true');
 			z++;
 		}
 	}
+}
+
+if ($('.jogar-tabela').length != 0){
+	$('.qt-palpites').text(localStorage.getItem("mPalp"));
+	var opoTab = localStorage.getItem('opoTab').split(',');
+	var opoHash = localStorage.getItem('opoHash').split(',');
+	var rep = localStorage.getItem("mRep").split(',');
+	var z = 0;
+	//alert(rep);
+	for (i=0; i<10; i++){
+		for (j=0, size=parseInt(opoHash[i]); j<size; j++){
+			$('.coluna'+i+j).children('.letra-ilha').text(letraOpo(z));
+			$('.coluna'+i+j).children('.letra-ilha').css('visibility', 'visible');
+			$('.coluna'+i+j).children('.img-ilha').css('visibility', 'visible');
+			$('.coluna'+i+j).children('.numero').text(opoTab[z]);
+			$('.coluna'+i+j).children('.numero').attr('value', 'true');
+			if (rep[z] != ' '){
+				$('.coluna'+i+j).children('.numero').css('visibility', 'visible');
+				$('.coluna'+i+j).css('-webkit-filter', 'grayscale(100%)');
+			}
+			z++;
+		}
+	}
+}
+
+if ($('.ilha-tabela-pirata').length != 0){
+	var rep = localStorage.getItem("opoRep").split(',');
+	var z = 0;
+	//alert(rep);
+	for (i=0; i<10; i++)
+		for (j=0; j<4; j++){
+			if ($('.coluna'+i+j).children('.numero').attr('value') == "true"){
+				if (rep[z] != ' ')
+					$('.coluna'+i+j).css('-webkit-filter', 'grayscale(100%)');
+				z++;
+			}
+
+		}
 }

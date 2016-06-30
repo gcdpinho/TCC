@@ -3,11 +3,9 @@
 	.topo
 		font-size 160% !important
 
-.ilha-tabela, .ilha-tabela-jogar
+.ilha-tabela, .ilha-tabela-jogar, .ilha-tabela-pirata
 	border 1px dashed #4d6472
 	background url("../img/agua.png")
-	height 4.2em
-
 
 
 .tabela
@@ -15,7 +13,6 @@
 	border-right 1px dashed #4d6472
 
 .modo-tabela
-
 	.ml30
 		margin-left 1.875em /* 30/16 */
 	.bg-azul-escuro
@@ -32,7 +29,7 @@
 		float right
 
 	.area-ilha
-		padding 0 !important
+		padding 2% !important
 
 	.bandeira
 		display none
@@ -52,16 +49,17 @@
 		position absolute
 		font-family roboto_black
 		left 5%
+		visibility hidden
 
 
 	.img-ilha
 		width 90%
 		display inline-block
-		padding-bottom 94%
+		padding-bottom 91%
 		background-size 332% !important
-		background-position 99% 28% !important
+		background-position 99% 27% !important
 		margin-left 10%
-		display none
+		visibility hidden
 
 	.numero
 		color #fff
@@ -73,7 +71,7 @@
 		z-index 100
 		left 7%
 		bottom 22%
-		display none
+		visibility hidden
 
 	.title
 		color #513e2f
@@ -85,4 +83,9 @@
 		position absolute
 		z-index 100
 		top 4%
+		left 2%
 		display none
+
+.jogar
+	.bandeira
+		display block

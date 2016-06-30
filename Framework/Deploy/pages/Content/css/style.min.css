@@ -7811,6 +7811,10 @@ div.disabled > .toggle-slide {
   width: 97%;
   bottom: 0;
 }
+.modo-tabela .bau {
+  margin-left: -24%;
+  width: 80% !important;
+}
 .title-blue {
   font-family: roboto_black;
   font-size: 190%;
@@ -8333,6 +8337,9 @@ html {
 }
 .mt11 {
   margin-top: 11%;
+}
+.mt4pc {
+  margin-top: 4%;
 }
 .mt3em {
   margin-top: 5%;
@@ -9531,10 +9538,10 @@ html {
   }
 }
 .ilha-tabela,
-.ilha-tabela-jogar {
+.ilha-tabela-jogar,
+.ilha-tabela-pirata {
   border: 1px dashed #4d6472;
   background: url("../img/agua.png");
-  height: 4.2em;
 }
 .tabela {
   -webkit-box-shadow: 0px 3px 12px #000;
@@ -9561,7 +9568,7 @@ html {
   float: right;
 }
 .modo-tabela .area-ilha {
-  padding: 0 !important;
+  padding: 2% !important;
 }
 .modo-tabela .bandeira {
   display: none;
@@ -9580,17 +9587,18 @@ html {
   position: absolute;
   font-family: roboto_black;
   left: 5%;
+  visibility: hidden;
 }
 .modo-tabela .img-ilha {
   width: 90%;
   display: inline-block;
-  padding-bottom: 94%;
+  padding-bottom: 91%;
   -webkit-background-size: 332% !important;
   -moz-background-size: 332% !important;
   background-size: 332% !important;
-  background-position: 99% 28% !important;
+  background-position: 99% 27% !important;
   margin-left: 10%;
-  display: none;
+  visibility: hidden;
 }
 .modo-tabela .numero {
   color: #fff;
@@ -9602,7 +9610,7 @@ html {
   z-index: 100;
   left: 7%;
   bottom: 22%;
-  display: none;
+  visibility: hidden;
 }
 .modo-tabela .title {
   color: #513e2f;
@@ -9614,7 +9622,11 @@ html {
   position: absolute;
   z-index: 100;
   top: 4%;
+  left: 2%;
   display: none;
+}
+.jogar .bandeira {
+  display: block;
 }
 
 @media (min-width: 1024px) {
