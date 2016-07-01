@@ -8299,14 +8299,77 @@ div.disabled > .toggle-slide {
   display: none;
 }
 
+@media screen and (max-width: 600px) {
+  h2.media-modal,
+  h3.media-modal {
+    font-size: 1em;
+  }
+  p.media-modal {
+    font-size: 0.55em;
+  }
+  .img-vitoria {
+    width: 41% !important;
+  }
+  .img-derrota {
+    width: 67% !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container-modal {
+    padding: 17% !important;
+  }
+}
 @media screen and (min-width: 1024px) {
   .desistir-media {
     padding: 17em !important;
   }
+  p.media-modal {
+    font-size: 0.8125em /* 13/16 */;
+    margin-top: 20px;
+  }
+  h2.media-modal {
+    font-size: 2em;
+    margin-top: 5px;
+  }
+  h3.media-modal {
+    font-size: 2em;
+  }
+  .img-vitoria {
+    width: 50% !important;
+  }
+  .img-derrota {
+    width: 87% !important;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .modal {
+    padding: 1% 28% !important;
+  }
   .desistir-media {
     padding: 15em 26em !important;
+  }
+  p.media-modal {
+    font-size: 1em /* 13/16 */;
+  }
+  h2.media-modal {
+    font-size: 2.5em;
+    margin-top: -24px;
+  }
+  h3.media-modal {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .img-vitoria {
+    width: 52% !important;
+  }
+  .img-derrota {
+    width: 95% !important;
+  }
+  .ajuda.media-modal {
+    margin-top: 20px !important;
+  }
+  .volta.media-modal {
+    margin-top: 20px !important;
   }
 }
 html {
@@ -8424,6 +8487,9 @@ html {
 .fs10 {
   font-size: 0.625em /* 10/16 */;
 }
+.fs11 {
+  font-size: 0.6875em /* 11/16 */;
+}
 .fs14 {
   font-size: 0.875em /* 14/16 */;
 }
@@ -8447,6 +8513,9 @@ html {
 }
 .wt60 {
   width: 60% !important;
+}
+.wt95 {
+  width: 95% !important;
 }
 .wt110 {
   width: 110%;
@@ -8492,11 +8561,6 @@ html {
   left: 0;
   margin-left: 1%;
 }
-.modal {
-  opacity: 1 !important;
-  -ms-filter: none !important;
-  filter: none !important;
-}
 .display-table {
   display: table !important;
 }
@@ -8535,15 +8599,23 @@ html {
 }
 .modal {
   background-color: rgba(0,0,0,0.8) !important;
-  display: none;
+  opacity: 1 !important;
+  -ms-filter: none !important;
+  filter: none !important;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 2% 25%;
 }
 .ftnormal {
   font-weight: 500 !important;
 }
+.container-modal {
+  padding: 12%;
+}
 .modal-desistir {
   display: table-cell;
   vertical-align: middle;
-  width: 50%;
   background-color: #bd8e46;
   -webkit-border-radius: 1.2em;
   border-radius: 1.2em;
@@ -8564,30 +8636,33 @@ html {
 }
 .modal-vitoria {
   background: url("../img/derrota-e-vitoria.png") no-repeat;
-  padding-bottom: 60%;
-  width: 51%;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  background-origin: content-box;
+  display: table-cell;
+  vertical-align: middle;
   z-index: 1000;
-  margin-top: 1%;
   -webkit-background-size: 100% !important;
   -moz-background-size: 100% !important;
   background-size: 100% !important;
 }
-.modal-vitoria .header-modal {
-  padding-top: 1em;
-}
-.modal-vitoria .body-modal .ajuda {
-  padding: 0.3em 0.35em;
+.modal-vitoria .ajuda {
+  margin: 0;
+  padding: 0.3em;
+  height: 2.3em !important;
   position: relative !important;
   -webkit-box-shadow: 0px 3px 12px #000;
   box-shadow: 0px 3px 12px #000;
+  height: 2.3em;
 }
-.modal-vitoria .body-modal .ajuda img {
+.modal-vitoria .ajuda img {
   width: 71%;
   margin: 0 auto;
 }
-.modal-vitoria .body-modal .volta {
+.modal-vitoria .volta {
   width: 2.3em;
-  padding: 0.4em 0.45em;
+  height: 2.33em;
+  padding: 0.3em 0.34em;
   display: inline-block;
   background-color: #173e28;
   -webkit-border-radius: 50%;
@@ -8595,15 +8670,15 @@ html {
   -webkit-box-shadow: 0px 3px 12px #000;
   box-shadow: 0px 3px 12px #000;
 }
-.modal-vitoria .body-modal .volta img {
+.modal-vitoria .volta img {
   width: 93%;
   margin: 0 auto;
 }
 .img-vitoria {
-  width: 34% !important;
+  width: 43%;
 }
 .img-derrota {
-  width: 55% !important;
+  width: 76%;
 }
 .ui-slider .ui-slider-handle {
   width: 0.75em !important /* 12/16 */;
@@ -9792,13 +9867,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   height: 7px;
 }
 
-@media screen and (min-width: 1079px) {
-  .config,
-  .ajuda,
-  .desistir {
-    width: 3% !important;
-  }
-}
 @media screen and (min-width: 1024px) {
   .numero {
     font-size: 1.3em !important;
