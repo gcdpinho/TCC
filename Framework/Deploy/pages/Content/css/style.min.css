@@ -7495,7 +7495,7 @@ div.disabled > .toggle-slide {
 .toggle-iphone .toggle-on {
   -webkit-border-radius: 9999px 0 0 9999px;
   border-radius: 9999px 0 0 9999px;
-  background: #037bda;
+  background: #2c9662;
   -webkit-box-shadow: inset 2px 2px 5px rgba(0,0,0,0.4);
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.4);
 }
@@ -7524,7 +7524,7 @@ div.disabled > .toggle-slide {
   -webkit-border-radius: 0 9999px 9999px 0;
   border-radius: 0 9999px 9999px 0;
   color: #828282;
-  background: #ececec;
+  background: #e84c3d;
   text-shadow: 0 0 1px #fff;
 }
 .toggle-iphone .toggle-off:after {
@@ -7821,12 +7821,20 @@ div.disabled > .toggle-slide {
   color: #3d616f;
   text-shadow: #fff 1px -1px 6px, #fff -1px 1px 6px, #fff 1px 1px 6px, #fff -1px -1px 6px;
 }
+.bluetooth .mb3 {
+  margin-bottom: 3%;
+}
 .bluetooth .box {
-  -webkit-border-radius: 5%;
-  border-radius: 5%;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
   padding-bottom: 2%;
   background-color: #fcfae1;
   border: 2px solid #513e2f;
+}
+.bluetooth .container-taggle {
+  position: absolute !important;
+  right: 3%;
+  bottom: 33%;
 }
 .bluetooth .fundo-button {
   background-color: #fff;
@@ -7871,8 +7879,8 @@ div.disabled > .toggle-slide {
   display: inline-block !important;
   background-color: #fff;
   color: #3d616f;
-  -webkit-border-radius: 15%;
-  border-radius: 15%;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
   border: none;
   -webkit-box-shadow: 0px 1px 3px #000;
   box-shadow: 0px 1px 3px #000;
@@ -7910,7 +7918,7 @@ div.disabled > .toggle-slide {
   height: 5.6em;
   overflow-y: auto;
   text-align: left;
-  margin-top: 0.5em;
+  margin: 0.5em 0.4em;
 }
 .bluetooth .msg {
   color: #686967;
@@ -8155,6 +8163,9 @@ div.disabled > .toggle-slide {
   margin-right: 1%;
   background-color: #4c181a;
 }
+.pd1 {
+  padding: 0.1em 0;
+}
 .close-ossos {
   background-position: 47.6% 1% !important;
   width: 96%;
@@ -8175,15 +8186,12 @@ div.disabled > .toggle-slide {
   -webkit-background-size: 467% !important;
   -moz-background-size: 467% !important;
   background-size: 467% !important;
-  -webkit-box-shadow: 2px 2px 7px #78564a;
-  box-shadow: 2px 2px 7px #78564a;
 }
 .madeira label {
   font-size: 1em;
   margin: 0 auto;
 }
 .letra-selecionada {
-  border-right: 3px solid #916a4d;
   padding-right: 17%;
 }
 .numero-selecionado {
@@ -8205,6 +8213,11 @@ div.disabled > .toggle-slide {
   vertical-align: middle;
   padding: 5% 0;
 }
+.border-marrom {
+  width: 0.1875em /* 3/16 */;
+  height: 1em;
+  background-color: #916a4d;
+}
 .border-right {
   border-right: 2px solid #916a4d;
 }
@@ -8219,7 +8232,6 @@ div.disabled > .toggle-slide {
   background-color: #c69c6d;
   font-size: 1.3em;
   color: #fff !important;
-  padding: 4% 10%;
   width: 34%;
   margin: 0 auto;
   text-align: center;
@@ -8233,7 +8245,7 @@ div.disabled > .toggle-slide {
   position: absolute;
   display: none;
   width: 27%;
-  padding-bottom: 29%;
+  padding-bottom: 19%;
   bottom: 28px;
   left: -24%;
 }
@@ -8308,8 +8320,14 @@ html {
 .full-width {
   width: 100% !important;
 }
+.margin0 {
+  margin: 0;
+}
 .mt2 {
   margin-top: 2px;
+}
+.mt3 {
+  margin-top: 3px;
 }
 .mt5 {
   margin-top: 5px;
@@ -8349,6 +8367,9 @@ html {
 }
 .mt-4 {
   margin-top: -4px;
+}
+.mt-5 {
+  margin-top: -5px;
 }
 .mt-20 {
   margin-top: -1.3em;
@@ -8549,7 +8570,7 @@ html {
   padding: 0.2em 0;
 }
 .modal-vitoria {
-  background: url("../img/derrota-e-vitória.png") no-repeat;
+  background: url("../img/derrota-e-vitoria.png") no-repeat;
   padding-bottom: 60%;
   width: 51%;
   z-index: 1000;
@@ -8562,18 +8583,17 @@ html {
   padding-top: 1em;
 }
 .modal-vitoria .body-modal .ajuda {
-  display: inline-block;
-  margin: 0 auto !important;
+  padding: 0.3em 0.35em;
   position: relative !important;
-  width: 22%;
   -webkit-box-shadow: 0px 3px 12px #000;
   box-shadow: 0px 3px 12px #000;
 }
 .modal-vitoria .body-modal .ajuda img {
   width: 71%;
+  margin: 0 auto;
 }
 .modal-vitoria .body-modal .volta {
-  width: 22%;
+  width: 2.3em;
   padding: 0.4em 0.45em;
   display: inline-block;
   background-color: #173e28;
@@ -8584,6 +8604,7 @@ html {
 }
 .modal-vitoria .body-modal .volta img {
   width: 93%;
+  margin: 0 auto;
 }
 .img-vitoria {
   width: 34% !important;
@@ -9547,6 +9568,8 @@ html {
   -webkit-box-shadow: 0px 3px 12px #000;
   box-shadow: 0px 3px 12px #000;
   border-right: 1px dashed #4d6472;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .modo-tabela .ml30 {
   margin-left: 1.875em /* 30/16 */;
@@ -9571,9 +9594,9 @@ html {
   padding: 2% !important;
 }
 .modo-tabela .bandeira {
-  display: none;
+  display: block;
   left: 0% !important;
-  bottom: 11px !important;
+  bottom: 23px !important;
 }
 .modo-tabela .col-xs-1 {
   width: 10%;
@@ -9607,7 +9630,6 @@ html {
   display: inline-block;
   font-size: 0.8em;
   font-weight: 700;
-  z-index: 100;
   left: 7%;
   bottom: 22%;
   visibility: hidden;
@@ -9853,7 +9875,7 @@ button {
 .tela-jogar button {
   display: block;
   margin: 0 auto;
-  width: 25%;
+  width: 29%;
   -webkit-box-shadow: 0px 3px 12px #000;
   box-shadow: 0px 3px 12px #000;
 }
@@ -9865,7 +9887,7 @@ button {
   height: 10%;
   background-color: #fff;
   color: #3d616f;
-  font-size: 2.075em;
+  font-size: 1.363em;
 }
 .tela-jogar .btn-intrucoes {
   background-color: #3d616f;

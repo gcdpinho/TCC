@@ -2,7 +2,12 @@
 title: Modo tabela
 layout: game
 ---
+<<<<<<< HEAD
 <main class="modo-tabela escolha-tabela">
+=======
+<main class="modo-tabela">
+	{{>modal-derrota}}
+>>>>>>> c6eef01b436e4fba3e8c8d35e9eacdabb6cf787d
 	<div class="container">
 		<div class="ajuda" id="bt-ajuda" onclick="location.href='tela-jogar.html'">
 			<img src="Content/img/ancora_01.png" alt="" class="img-responsive">
@@ -11,11 +16,26 @@ layout: game
 			<div class="col-xs-2 no-padding mt10pc">
 				<img src="Content/img/pirata2.png" class="img-responsive pirata2">
 				<div class="row sprite madeira">
-					<div class="area-ilha">
-						<label class="letra-selecionada"></label>
-						<label class="numero-selecionado"></label>
+					<div class="col-xs-12 no-padding">
+						<div class="row center-block pd1">
+							<div class="col-xs-offset-1 col-xs-4">
+								<span class="letra-selecionada text-center roboto-black center-block">A</span>
+							</div>
+							<div class="col-xs-1 mt3">
+								<div class="border-marrom"></div>
+							</div>
+							<div class="col-xs-5">
+								<span class="numero-selecionado text-center roboto-black center-block">1</span>
+							</div>
+						</div>
+						<div class='sprite bandeira'></div>
 					</div>
-					<div class='sprite bandeira'></div>
+				</div>
+				<div class="row mt30">
+					<div class="col-xs-12 text-center mt3em">
+				    <span class="palpites text-uppercase">Palpites</span>
+				    <div class="qt-palpites">0</div>
+				   </div>
 				</div>
 			</div>
 			<div class="col-xs-9 numero-ilha ml30 text-center">
