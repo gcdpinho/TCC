@@ -16,6 +16,20 @@ $("#continuar").on("click", function(){
 });
 
 $(document).ready(function(){
+	//inicializa plugin toggles
+
+	$('.toggle').toggles({
+		drag: true, 
+  		click: true,
+  		text: false,
+  		off: true,
+  		width: 40,
+  		height: 15,
+  		checkbox: null, 
+  		clicker: null
+	});
+	
+	$("#slider-volume").slider("value", 55);
 	setTimeout(function(){
 		$('#control-progress-bar').attr("style", 'padding-right: 20%;');
 		setTimeout(function(){
