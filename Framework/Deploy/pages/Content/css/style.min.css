@@ -8630,55 +8630,37 @@ html {
   padding: 0.2em 0;
 }
 .modal-vitoria {
-<<<<<<< HEAD
   background: url("../img/derrota-e-vitoria.png") no-repeat;
   -webkit-background-origin: content;
   -moz-background-origin: content;
   background-origin: content-box;
   display: table-cell;
   vertical-align: middle;
-=======
   background: url("../img/derrota-e-vitória.png") no-repeat;
   padding-bottom: 60%;
   width: 51%;
->>>>>>> fd5e9a57752e2e27e808c05750e4dff55aa1f81f
   z-index: 1000;
   -webkit-background-size: 100% !important;
   -moz-background-size: 100% !important;
   background-size: 100% !important;
 }
-<<<<<<< HEAD
 .modal-vitoria .ajuda {
   margin: 0;
   padding: 0.3em;
   height: 2.3em !important;
-=======
-.modal-vitoria .header-modal {
-  padding-top: 1em;
-}
-.modal-vitoria .body-modal .ajuda {
-  display: inline-block;
-  margin: 0 auto !important;
->>>>>>> fd5e9a57752e2e27e808c05750e4dff55aa1f81f
   position: relative !important;
-  width: 22%;
   -webkit-box-shadow: 0px 3px 12px #000;
   box-shadow: 0px 3px 12px #000;
   height: 2.3em;
 }
 .modal-vitoria .ajuda img {
   width: 71%;
+  margin: 0 auto;
 }
-<<<<<<< HEAD
 .modal-vitoria .volta {
   width: 2.3em;
   height: 2.33em;
   padding: 0.3em 0.34em;
-=======
-.modal-vitoria .body-modal .volta {
-  width: 22%;
-  padding: 0.4em 0.45em;
->>>>>>> fd5e9a57752e2e27e808c05750e4dff55aa1f81f
   display: inline-block;
   background-color: #173e28;
   -webkit-border-radius: 50%;
@@ -8688,6 +8670,7 @@ html {
 }
 .modal-vitoria .volta img {
   width: 93%;
+  margin: 0 auto;
 }
 .img-vitoria {
   width: 43%;
