@@ -1,13 +1,57 @@
----
-title: Modo tabela Barba cinza
-layout: game
----
-<main class="modo-tabela jogar-tabela">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="pt-br" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="pt-br" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="pt-br" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modo tabela</title>
+
+
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="Content/css/style.min.css">
+  <!--[if lt IE 9]>
+      <script src="Content/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="layout-game">
+    
+	
+<main class="modo-tabela escolha-tabela jogar">
 	<div class="container">
 		<div class="row">
+			<div class="col-xs-2 no-padding mt4pc">
+				<img src="Content/img/pirata2.png" class="img-responsive pirata2">
+				<div class="row sprite madeira">
+					<div class="col-xs-12 no-padding">
+						<div class="row center-block pd1">
+							<div class="col-xs-offset-1 col-xs-4">
+								<span class="letra-selecionada text-center roboto-black center-block" id="mLetra"></span>
+							</div>
+							<div class="col-xs-1 mt3">
+								<div class="border-marrom"></div>
+							</div>
+							<div class="col-xs-5">
+								<span class="numero-selecionado text-center roboto-black center-block" id="mNum"></span>
+							</div>
+						</div>
+						<div class='sprite bandeira'></div>
+					</div>
+				</div>
+				<div class="row mt14pc">
+					<div class="col-xs-12 text-center mt3em">
+				    <span class="palpites text-uppercase">Palpites</span>
+				    <div class="qt-palpites">0</div>
+				   </div>
+				</div>
+			</div>
 			<div class="col-xs-9 numero-ilha ml30 text-center">
 				<div class="row wt110">
-					<h5 class="title text-uppercase"><span class="fs1-5">É</span> sua vez, dê seu palpite!</h5>
+					<h5 class="title text-uppercase text-center"><span class="fs1-5">A</span>gora é minha vez!</h5>
 				</div>
 				<div class="tabela">
 					<div class="row">
@@ -23,61 +67,61 @@ layout: game
 						<div class="col-xs-1 bg-azul-escuro roboto-black fs20">9</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-1 ilha-tabela-jogar coluna00">
+						<div class="col-xs-1 ilha-tabela-pirata coluna00">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 1" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna10">
+						<div class="col-xs-1 ilha-tabela-pirata coluna10">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 2" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna20">
+						<div class="col-xs-1 ilha-tabela-pirata coluna20">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 3" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna30">
+						<div class="col-xs-1 ilha-tabela-pirata coluna30">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 4" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna40">
+						<div class="col-xs-1 ilha-tabela-pirata coluna40">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 5" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna50">
+						<div class="col-xs-1 ilha-tabela-pirata coluna50">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 6" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna60">
+						<div class="col-xs-1 ilha-tabela-pirata coluna60">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 7" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna70">
+						<div class="col-xs-1 ilha-tabela-pirata coluna70">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 8" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna80">
+						<div class="col-xs-1 ilha-tabela-pirata coluna80">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 9" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna90">
+						<div class="col-xs-1 ilha-tabela-pirata coluna90">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 10" value=""></span>
@@ -85,61 +129,61 @@ layout: game
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-1 ilha-tabela-jogar coluna01">
+						<div class="col-xs-1 ilha-tabela-pirata coluna01">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 11" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna11">
+						<div class="col-xs-1 ilha-tabela-pirata coluna11">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 12" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna21">
+						<div class="col-xs-1 ilha-tabela-pirata coluna21">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 13" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna31">
+						<div class="col-xs-1 ilha-tabela-pirata coluna31">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 14" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna41">
+						<div class="col-xs-1 ilha-tabela-pirata coluna41">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 15" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna51">
+						<div class="col-xs-1 ilha-tabela-pirata coluna51">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 16" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna61">
+						<div class="col-xs-1 ilha-tabela-pirata coluna61">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 17" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna71">
+						<div class="col-xs-1 ilha-tabela-pirata coluna71">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 18" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna81">
+						<div class="col-xs-1 ilha-tabela-pirata coluna81">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 19" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna91">
+						<div class="col-xs-1 ilha-tabela-pirata coluna91">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 20" value=""></span>
@@ -147,61 +191,61 @@ layout: game
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-1 ilha-tabela-jogar coluna02">
+						<div class="col-xs-1 ilha-tabela-pirata coluna02">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 21" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna12">
+						<div class="col-xs-1 ilha-tabela-pirata coluna12">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 22" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna22">
+						<div class="col-xs-1 ilha-tabela-pirata coluna22">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 23" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna32">
+						<div class="col-xs-1 ilha-tabela-pirata coluna32">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 24" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna42">
+						<div class="col-xs-1 ilha-tabela-pirata coluna42">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 25" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna52">
+						<div class="col-xs-1 ilha-tabela-pirata coluna52">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 26" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna62">
+						<div class="col-xs-1 ilha-tabela-pirata coluna62">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 27" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna72">
+						<div class="col-xs-1 ilha-tabela-pirata coluna72">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 28" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna82">
+						<div class="col-xs-1 ilha-tabela-pirata coluna82">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 29" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna92">
+						<div class="col-xs-1 ilha-tabela-pirata coluna92">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 30" value=""></span>
@@ -209,90 +253,138 @@ layout: game
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-1 ilha-tabela-jogar coluna03">
+						<div class="col-xs-1 ilha-tabela-pirata coluna03">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 31" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna13">
+						<div class="col-xs-1 ilha-tabela-pirata coluna13">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 32" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna23">
+						<div class="col-xs-1 ilha-tabela-pirata coluna23">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 33" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna33">
+						<div class="col-xs-1 ilha-tabela-pirata coluna33">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 34" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna43">
+						<div class="col-xs-1 ilha-tabela-pirata coluna43">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 35" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna53">
+						<div class="col-xs-1 ilha-tabela-pirata coluna53">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 36" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna63">
+						<div class="col-xs-1 ilha-tabela-pirata coluna63">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 37" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna73">
+						<div class="col-xs-1 ilha-tabela-pirata coluna73">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 38" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna83">
+						<div class="col-xs-1 ilha-tabela-pirata coluna83">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 39" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
 						</div>
-						<div class="col-xs-1 ilha-tabela-jogar coluna93">
+						<div class="col-xs-1 ilha-tabela-pirata coluna93">
 							<span class="letra-ilha"></span>
 							<div class="sprite img-ilha"></div>
 							<span class="numero 40" value=""></span>
 							<img src="Content/img/xis.png" class="img-responsive xis">
-
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-xs-2 ml2 mt30">
-				<img src="Content/img/pirata1.png" class="img-responsive pirata1 ml-19">
-				<div class="row sprite madeira">
-					<div class="area-ilha">
-						<label class="letra-selecionada">?</label>
-						<label class="numero-selecionado" id="opoNum"></label>
-					</div>
-					<div class='sprite bandeira-verde left74 bottom15'></div>
-				</div>
-			</div>
-			<div class="col-xs-2 text-center mt3em ml2">
-				<span class="palpites text-uppercase">Palpites</span>
-				<div class="qt-palpites"></div>
-			</div>
 		</div>
-		{{>modal-desistir}}
-		<div class="desistir" id="bt-desistir">
-			<img src="Content/img/close.png" alt="" class="img-responsive">
-		</div>
-		{{>menu-config}}
-	</div>
+		<div class="conteudo-menu">
+						<div class="row wt128">
+							<div class="col-xs-12">
+								<div class="config">
+									<img src="Content/img/leme.png" alt="" class="img-responsive">
+								</div>
+							</div>
+						</div>
+						<div class="square-config">
+						
+							<div class="row">
+								<div class="col-xs-3 no-padding-right">
+									<div class="sprite icon-volume pull-left"></div>
+								</div>
+								<div class="col-xs-1 no-padding-left">
+									<span class="white fs20 pull-right">-</span>
+								</div>
+								<div class="col-xs-6 mt15 no-padding pl2 pr2">
+									<div id="slider-volume"></div>
+								</div>
+								<div class="col-xs-1 no-padding">
+									<span class="white fs20 pull-right mt2">+</span>
+								</div>
+							</div>
+							<div class="row mt5">
+								<div class="col-xs-3 mt2 no-padding-right">
+									<div class="sprite icon-musica pull-left"></div>
+								</div>
+								<div class="col-xs-1 no-padding-left">
+									<span class="white fs20 pull-right mt-3">-</span>
+								</div>
+								<div class="col-xs-6 mt10 no-padding pl2 pr2">
+									<div id="slider-musica"></div>
+								</div>
+								<div class="col-xs-1 no-padding">
+									<span class="white fs20 pull-right mt-3">+</span>
+								</div>
+							</div>
+							<div class="row mt5">
+								<div class="col-xs-3 no-padding-right">
+									<div class="sprite icon-brilho pull-left"></div>
+								</div>
+								<div class="col-xs-1 no-padding-left">
+									<span class="white fs20 pull-right mt-3">-</span>
+								</div>
+								<div class="col-xs-6 mt10 no-padding pl2 pr2">
+									<div id="slider-brilho"></div>
+								</div>
+								<div class="col-xs-1 no-padding">
+									<span class="white fs20 pull-right mt-3">+</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<a class="fs14 white text-center center-block roboto-black" href="#"><ins>Como jogar</ins></a>
+								</div>
+							</div>
+						</div>
+					</div>	</div>
 </main>
+
+
+  <footer></footer>
+
+	<script src="Content/js/plugins.min.js"></script>
+	<script src="Content/js/app.min.js"></script>
+
+
+</body>
+
+</html>
